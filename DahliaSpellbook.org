@@ -1,0 +1,169 @@
+* Patron Spells
+*** Level 1
+    Silent Image : 400+40/lvl : concentration : Creates minor illusion of your design
+*** Level 2
+    Darkness : Touch : 1 min/lvl : 20rad of supernatural shadow down one light step
+*** Level 3
+    Deeper Darkness : Touch : 10 min/lvl : 60rad of supernatural shadow down two light steps
+*** Level 4
+    Shadow Conjuration : Varies : Varies : Mimics conjuration below 4th level, but only 20% real
+* Learned Spells
+** Level 0
+   Arcane Mark : Touch : Permanent : Inscribes a personal rune on an object or creature (visible or invisible).
+   Bleed : 25+5/2lvl : Instant : Stabilized creature resumes dying
+   Dancing Lantern : Touch : 1hr/lvl : Animates a lantern that follows you
+   Dancing Lights : 100+10/lvl : 1 min : Creates torches or other lights
+   Daze : 25+5/2lvl : 1rd : Single humanoid with 4hd or less loses its next action
+   Detect Magic : 60 : 1 min/lvl : Detects all spells and magic items within 60ft
+   Detect Poison : 25+5/2lvl : Instant : Detect poison in one creature or small object
+   Guidance : Touch : 1 min|d : +1 on one attack roll, saving throw, or skill check
+   Light : Touch : 10 min/lvl : Object shines like a torch
+   Mending : 10 : Instant : Makes minor repairs on an object (lb per lvl)
+   Message : 100+10/lvl : 10/lvl : Whisper conversation at a distance
+   Putrefy Food and Drink : 10 : Instant : Makes food and water inedible (Destroy potions)
+   Read Magic : Personal : 10/lvl : Read scrolls and spellbooks
+   Resistance : Touch : 1min : Subject gains +1 on saving throws
+   Spark : 25+5/lvl : Instant : Ignites flammable objects (one Fine object)
+   Stabilize : 25+5/2lvl : Instant : Cause a dying creature to stabilize
+   Touch of Fatigue : Touch : 1 rd/lvl : Touch attack fatigues a target
+** Level 1
+   Air Bubble : Touch : 1 min/lvl : Creates a small pocket of air around your head or an object
+   Beguiling Gift : 5 : 1rd : Subject immediately accepts an offered item and uses it
+   Burning hands : 15 cone : Instant: 5d4 fire damage
+   Comprehend Languages : Personal : 10/lvl : You understand all spoken and written languages
+   Cure Light Wounds : Touch : Instant : Cures 1d8+5
+   Detect Secret Doors : 60 cone : 1 min/lvl : Reveals hidden doors within 60ft
+   Ear Piercing Scream : 25+5/2lvl : Instant : Deal sonic damage (1d6/2lvl) and daze target
+   Infernal Healing : Touch : 1 min : Touch a creature with devils blood, giving it fast healing 1
+   Mage armor : Touch : 1 hr/lvl : Gives subject +4 armor bonus
+   Mask Dweomer : Touch : 1 day/lvl : Hides presence of spell from detect magic
+   Obscuring Mist : 20 rad on caster : 1 min/lvl : Fog surrounds you
+   Peacebond : 25+5/2lvl : 1min/lvl : Locks a weapon in place on the targets body
+   Reduce person : 25+5/2lvl : 1 min/lvl : Humanoid creature halves in size
+   Unseen servant : 25+5/2lvl : 1 hr/lvl : Invisible force obeys your commands
+   Vocal alteration : 25+5/2lvl : 1 min/lvl : Disguise target's voice
+** Level 2
+   Cure moderate wounds : Touch : Instant : Cures 2d8+1/level
+   Detect Thoughts : 60 cone : conc < 1 min/lvl : Allows "listening" to surface thoughts
+   Hold person : 100+10/lvl : 1 rd/lvl : paralyze one humanoid for 1 rd/lvl
+   See Invisibility : personal : 10 min/lvl : Reveals invisible creatures or objects
+   Skinsend : personal : 1 hr/lvl : Animate and possess your own skin as if it were a separate creature
+   Steal voice : 100+10/lvl : permanent : Target gains the croaking spellblight
+   Vomit Swarm : personal : 1 rd/lvl : Vomit a swarm of spiders, wasps(cl8), or army ants(cl12)
+   Web shelter : 25+5/2lvl | 5-10sphere | 5-20 hemisphere : 1 hr/lvl : Create a comfortable shelter made of webbing
+** Level 3
+   Remove Curse : touch : instant : Frees object or person from curse
+   Sepia snake sigil : Touch : permanent|1d4+1 day/lvl : Creates text symbol that immobilizes the reader
+   Stinking cloud : 100+10/lvl|20rad : 1 rd/lvl : Nauseating vapors, 1 rd/lvl
+   Suggestion : 25+5/2lvl : 1 hr/lvl | complete : Compels a subject to follow stated course of action
+   Unadulterated Loathing : 25+5/2lvl : 1 day/lvl : Target is compelled to avoid another creature
+** Level 4
+   Black Tentacles : 100+10/lvl : 1 rd/lvl : Tentacles grapple all creatures within 20 spread
+   Dimension Door : 400+40/lvl : instant : Teleports you a short distance
+   Phantasmal Killer : 100+10/lvl : instant : Fearsome illusion kills subject or deals 3d6 damage
+   Threefold Aspect : personal : 24 hr : Appear older or younger
+* Spells I WANT
+** Level 1
+   Chill Touch : Touch : Instant : 1d6+1str cold, undead will save or flee like panicked for 1d4+cl rds
+   Command : 25+5/2lvl : 1rd : One subject obeys selected command for 1 round
+   Decompose Corpse : Touch : Instant|min : Turn a corpse into a clean skeleton, if cast on non-skeletal corporeal undead -2AC/CMD
+   Enlarge Person : 25+5/2lvl : 1 min/lvl : Humanoid creature doubles in size
+   Fumbletongue : 25+5/2lvl : 1d4rd : Target cannot speak intelligently (20% fail verbal cast | command word)
+   Icicle Dagger : 0 : 1 min/lvl : Masterwork ice dagger deals +1 cold damage
+   Identify : 60 cone : 3rd/lvl : Gives +10 bonus to identify magic items
+   Interrogation : Touch : 1 min/lvl : Target answers questions or suffers pain
+   Negative Reaction : 25+5/2lvl : 1 rd/lvl : Targeted creature may not positively influence anyone
+   Ray of enfeeblement : 25+5/2lvl : 1 rd/lvl : Ray causes 1d6+1/2lvl str dmg
+   Shadow weapon : 0 : 1 min/lvl : Create a quasi-real masterwork weapon
+   Summon minor monster : 25+5/2lvl : 1 rd/lvl : Summon 1d3 tiny animals
+   Summon Monster I : 25+5/2lvl : 1 rd/lvl : Summons extraplanar creature to fight for you
+   Youthful appearance : Touch : 1 hr/lvl : Target appears younger
+** Level 2
+   Alter Self : Personal : 1 min/lvl : Assume form of a small or medium humanoid
+   Blindness/Deafness : 100+10/lvl : permanent : Makes subject blinded or deafened
+   Blood transcription : Touch : 24 hr : Learn a spell from the target's blood
+   Death Knell : Touch : 10 min/tar-hd : Kills dying creature; you gain 1d8 temp hp, 2 str, and 1 cl
+   Disfiguring Touch : Touch : 1 day/lvl : Target becomes disfigured
+   Feast of Ashes : 25+5/2lvl : 2 day/lvl : A target starves with insatiable hunger
+   Fog Cloud : 100+10/lvl : 10 min/lvl : Fog obscures vision
+   Frost fall : 25+5/2lvl|5rad burst : 1 rd/2lvl : The area is covered in a chilling frost 
+   Ghostly Disguise : personal : 10 min/lvl : You look like a ghost of yourself
+   Glitterdust : 100+10/lvl | 10rad : 1 rd/lvl : Blinds creatures, outlines invisible creatures (-40 on stealth)
+   Haunting mists : 20ft | 20ft rad : 1 min/lvl : Creatures are shaken and take wis damage
+   Perceive cues : personal : 10 min/lvl : +5 perception and sense motive
+   Pox pustules : 25+5/2 : 1 min/lvl : Subject is sickened and has -4 dex
+   Protective Penumbra : Touch : 10 min/lvl : Shadow protects the target from light
+   Share memory : Touch : Instant : Share one memory with the target
+   Silk to steel : Touch : 1 rd/lvl : Use scarf as a shield or whip
+   Summon Monster II : 25+5/2lvl : 1 rd/lvl : Summons extraplanar creature to fight for you
+   Symbol of mirroring : : : Triggered rune creates mirror images
+   Touch of idiocy : Touch : 10 min/lvl : Subject takes 1d6 penalty to int, wis, and cha
+** Level 3
+   Anthropomorphic animal : Touch : 1 hr/lvl : Animal becomes bipedal
+   Arcane Sight : personal : 1 min/lvl : Magical auras become visible to you
+   Ash storm : 400+40/lvl | 40rx20 cylinder : 1 rd/lvl : Hamper vision and movement
+   Bestow curse : Touch : Permanent : -6 to abil score; -4 on att, save, check; or 50% skip
+   Cackling Skull : 25+5/2lvl : permanent : Skull acts as magic mouth, listeners are shaken
+   Clairaudience/Clairvoyance : 400+40/lvl : 1min/lvl : Hear or see at a distance
+   Countless eyes : Touch : 1 hr/lvl : Eyes give all-around vision
+   Cup of dust : 25+5/2lvl : 1 day/lvl : Causes a creature to become dehydrated
+   Dispel Magic : 100+10/lvl : instant : Cancels one magical spell or effect
+   Eruptive pustules : personal : 1 min/lvl : Acid boils burst when you are attacked
+   Excruciating Deformation : Touch : 1 rd/lvl : Target takes Dex and Con damage
+   Fly : Touch : 1 min/lvl : Subject flies at speed of 60
+   Glyph of warding : Touch | object | 5 sqft/lvl : permanent : Inscription harms those who pass it
+   Healing Thief : Touch : 1 rd/lvl|d : You siphon half of all magical healing that the targeted creature receives
+   Heroism : Touch : 10 min/lvl : Gives +2 bonus att, saves, skill
+   Hostile levitation : 25+5/2lvl : 1 rd/lvl : Levitates the targeted creature up off the ground.
+   Lightening Bolt : 120 line : instant : Electricity deals 1d6/lvl damage
+   Locate object : 400+40/lvlrad : 1 min/lvl : Sense direction toward object around player
+   Marionette possession : 100+10/lvl : 10 min/lvl : Magic jar, but limited to line of sight
+   Nature's Exile  : Touch : permanent : Gives subject -10 on survival checks
+   Rain of Frogs : - : - : Summon a swarm of poisonous frogs
+   Ray of Exhaustion : 25+5/2lvl : 1 min/lvl : Ray makes subject exhausted
+   Reckless Infatuation : 25+5/2lvl : 1 day/lvl : Target is compelled to stay near another
+   Remove Blindness/Deafness : touch : instant : Cures normal or magical blindness or deafness
+   Remove Disease : touch : instant : Cures all diseases affecting subject
+   Sands of time : touch : 10 min/lvl|instant : Target temporarily ages
+   Screech : 30rad : instant : Foes provoke attacks of opportunity
+   Seek Thoughts : 40rad : 1 min/lvl : Detects thinking creatures' thoughts
+   Share senses : 400+40/lvl : 1 min/lvl : Perceive the world around your familiar
+   Sleet storm : 400+40/lvl|40radx20 cyl : 1 rd/lvl : Hampers vision and movement
+   Spit Venom : 25+5/2lvl : instant : Spit blinding black adder venom
+   Summon Monster III : 25+5/2lvl : 1 rd/lvl : Summons extraplanar creature to fight for you
+   Tongues : Touch : 10 min/lvl : Speak and understand any language
+   Twilight knife : 25+5/2lvl : 1 rd/lvl : Floating knife attacks with you
+   Vampiric Touch : Touch : instant : Touch deals 1d6/2lvl; damage -> temp hp 1hr
+   Vermin Shape I : personal : 1 min/lvl : Take the form and some of the powers of a small or medium vermin
+   Water walk : Touch : 10 min/lvl : Subject treads on water as if solid
+   Witness : 400+40/lvl : 1 min/lvl : See through the target's eyes and ears
+** Level 4
+   Arcane Eye : unlimited : 1 min/lvl : Invisible floating eye moves 30/rd
+   Cape of Wasps : personal : 1 rd/lvl : Wasp swarm defends or carries you
+   Cure serious wounds : Touch : instant : Cures 3d8+1/lvl
+   Curse of Magic Negation : 100+10/lvl : 10 min/lvl : Target gains the negated spellblight
+   Crushing Despair : 30 cone : 1 min/lvl : Subjects take -2 on att, dmg, saves, checks
+   Detect Scrying : 40rad : 24 hr : Alerts you to magical eavesdropping
+   Enervation : 25+5/2lvl : instant : Subject gains 1d4 negative levels
+   Familiar Melding : 100+10/lvl : 1 hr/lvl : Possess your familiar
+   Fear : 30 cone : 1 rd/lvl : Subjects within cone flee for 1 rd/lvl
+   Fleshworm infestation : Touch : 1 rd/lvl : Worms deal hp and dex damage
+   Ice storm : 400+40/lvl : 1 rd/lvl : Hail deals 5d6 damage in cylinder 40 across
+   Greater Infernal Healing : Touch : 1 min : Touch a creature with devils blood, giving it fast healing 4
+   Locate creature : - : 10 min/lvl : Indicates direction to a familiar creature
+   Moonstruck : 100+10/lvl : 1 rd/lvl : Subject is enraged and confused
+   Poison : Touch : instant : Touch deals 1d3 con damage 1/rd for 6 rounds
+   Ride the Waves : Touch : 1 hr/lvl : Target can breathe water and swim
+   Scrying : - : 1 min/lvl : Spies on subject from a distance
+   Secure Shelter : 25+5/2lvl : 2 hr/lvl : Creates a sturdy cottage
+   Shadow Step : 100+10/lvl : instant : Teleport from one shadow to another
+   Sleepwalk : Touch : 1 hr/lvl : Causes a creature to move while asleep
+   Solid Fog : 100+10/lvl 20rad : 1 min/lvl : Blocks vision and slows movement
+   Spite : personal : 1 hr/lvl : Inflict touch spell upon creature that attacks you
+   Summon Monster IV : 25+5/2lvl : 1 rd/lvl : Summons extraplanar creature to fight for you
+   Communal Tongues : Touch : 10 min/lvl : As tongues, but divide duration among touched creatures
+   Touch of slime : Touch : instant : Touch infests a target with green slime
+   Vermin Shape II : self : 1 min/lvl : As vermin shape, but tiny or large
+   Volcanic Storm : 400+40/lvl|20radx40 : 1 rd/lvl : Hot rocks deal 5d6 damage
+   Wandering Star Motes : 25+5/2lvl : 1 rd/lvl : Outlines subject and produces light as a sunrod
+** Level 5
