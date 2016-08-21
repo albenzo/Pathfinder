@@ -17,7 +17,6 @@
    Detect Magic : 60 : 1 min/lvl : Detects all spells and magic items within 60ft
    Detect Poison : 25+5/2lvl : Instant : Detect poison in one creature or small object
    Guidance : Touch : 1 min|d : +1 on one attack roll, saving throw, or skill check
-   Light : Touch : 10 min/lvl : Object shines like a torch
    Mending : 10 : Instant : Makes minor repairs on an object (lb per lvl)
    Message : 100+10/lvl : 10/lvl : Whisper conversation at a distance
    Putrefy Food and Drink : 10 : Instant : Makes food and water inedible (Destroy potions)
@@ -43,6 +42,7 @@
    Unseen servant : 25+5/2lvl : 1 hr/lvl : Invisible force obeys your commands
    Vocal alteration : 25+5/2lvl : 1 min/lvl : Disguise target's voice
 ** Level 2
+   Communal Mount : 6 Mounts : 2 hrs/lvl : Summons up to six light horses/ponies duration divided by horse number
    Cure moderate wounds : Touch : Instant : Cures 2d8+1/level
    Detect Thoughts : 60 cone : conc < 1 min/lvl : Allows "listening" to surface thoughts
    Hold person : 100+10/lvl : 1 rd/lvl : paralyze one humanoid for 1 rd/lvl
