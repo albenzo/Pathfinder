@@ -62,6 +62,9 @@
    Dimension Door : 400+40/lvl : instant : Teleports you a short distance
    Phantasmal Killer : 100+10/lvl : instant : Fearsome illusion kills subject or deals 3d6 damage
    Threefold Aspect : personal : 24 hr : Appear older or younger
+** Level 5
+   Baleful Polymorph : 25+5ft/2lvl : Fort save to turn creature to cr1 animal, will to keep mind
+   Magic Jar : 100+10/lvl : 1 hr/lvl : Possess creatures
 * Spells I WANT
 ** Level 1
    Chill Touch : Touch : Instant : 1d6+1str cold, undead will save or flee like panicked for 1d4+cl rds
