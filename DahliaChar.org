@@ -80,7 +80,7 @@
 
   #+NAME:Experience
   |------------+-------+-------|
-  | Experience | 66093 | 75000 |
+  | Experience | 82183 | 95000 |
   |------------+-------+-------|
 
   #+NAME:Feats
@@ -126,9 +126,9 @@
   |---+---------------+-------+------+---------+---------+------|
   | ! | Saving Throws | Total | Base | Ability | Enhance | Misc |
   |---+---------------+-------+------+---------+---------+------|
-  | # | Fortitude     |     4 |    3 |       1 |         |      |
-  | # | Reflex        |     5 |    3 |       2 |         |      |
-  | # | Will          |     9 |    6 |       3 |         |      |
+  | # | Fortitude     |     5 |    3 |       1 |       1 |      |
+  | # | Reflex        |     6 |    3 |       2 |       1 |      |
+  | # | Will          |    10 |    6 |       3 |       1 |      |
   |---+---------------+-------+------+---------+---------+------|
   #+TBLFM: $5=remote(Stats,@3$Modifier)::@2$3..@4$3=vsum($4..$7)::@2$4=remote(Class, @>$Fort)::@2$5=remote(Stats, @4$Modifier)::@3$4=remote(Class, @>$Ref)::@4$4=remote(Class, @>$Will)::@4$5=remote(Stats, @6$Modifier)
 
@@ -136,7 +136,7 @@
   |---+--------------+----|
   | # | Base         | 64 |
   |   | Temporary HP |    |
-  |   | Current HP   | 64 |
+  |   | Current HP   | 59 |
   |---+--------------+----|
   | # | Total        | 64 |
   |---+--------------+----|
@@ -197,7 +197,7 @@
   | # |                   |               |       | Appraise             | Int  |      8 |       |       8 |         |      |
   | # |                   |               |       | Bluff                | Cha  |     -1 |       |      -1 |         |      |
   | # |                   |             1 |       | Climb                | Str  |     -3 |       |      -3 |         |      |
-  | # |                   |               |     1 | Craft: Alchemy       | Int  |     24 |     9 |       8 |       3 |    4 |
+  | # |                   |               |     1 | Craft: Alchemy       | Int  |     24 |     9 |       8 |       3 |    6 |
   | # |                   |               |     1 | Craft:               | Int  |      8 |       |       8 |         |      |
   | # |                   |               |       | Diplomacy            | Cha  |     -1 |       |      -1 |         |      |
   | # |                 1 |             1 |       | Disable Device       | Dex  |      - |       |       2 |         |      |
@@ -252,11 +252,13 @@
    |   | Mithral Buckler (2)   |        1 |                3 |             3 |
    |   | Silver Mirror         |        1 |                  |             1 |
    |   | Spell component pouch |        1 |                2 |             2 |
-   |   | Lead Box              |        1 |                0 |            50 |
-   |   | Magic Branch          |        1 |                0 |             1 |
    |   | Foaming Powder        |        1 |                1 |             0 |
+   |   | Cloak of Res (1)      |        1 |                1 |             1 |
+   |   | Alchemist's Lab       |        1 |                0 |            40 |
+   |   | Gem worth 100         |        1 |                0 |             0 |
+   |   | Research materials    |        1 |                0 |            10 |
    |---+-----------------------+----------+------------------+---------------|
-   | # | Total Weight:         |          |               10 |            69 |
+   | # | Total Weight:         |          |               12 |            59 |
    |---+-----------------------+----------+------------------+---------------|
    #+TBLFM: @>$4=vsum(@2$4..@-2$4)::@>$5=vsum(@2$5..@-2$5)
 
@@ -266,7 +268,7 @@
    | Head      |                      |
    | Face      |                      |
    | Throat    | Amulet Nat (2)       |
-   | Shoulders |                      |
+   | Shoulders | Cloak of Resis (1)   |
    | Body      |                      |
    | Torso     | Cackling Hags Blouse |
    | Arms      |                      |
@@ -297,17 +299,17 @@
    | Item             | Charges | Caster Level |
    |------------------+---------+--------------|
    | Pearl of Power 2 |       1 | 17           |
-   | Healing Branch   |       - | Artifact     |
    |------------------+---------+--------------|
    
 ** Wealth
    #+NAME:Wealth
-   |----------+-----|
-   | Platinum |     |
-   | Gold     | 631 |
-   | Silver   |     |
-   | Copper   |   1 |
-   |----------+-----|
+   |----------+--------|
+   | Platinum |     57 |
+   | Gold     |    427 |
+   | Silver   |      6 |
+   | Copper   |      8 |
+   | Debts    | 216.67 |
+   |----------+--------|
 
 ** Bags and Containers
    #+NAME:Bags
@@ -365,35 +367,35 @@
 
   # See DahliaSpellBook.org
   #+NAME:Spells
-  |------------+-------+-----------------------+-------------+---------|
-  | # Prepared | Level | Name                  | Description | Save DC |
-  |------------+-------+-----------------------+-------------+---------|
-  |            |     0 | Detect Magic          |             |      18 |
-  |            |     0 | Dancing Lights        |             |      18 |
-  |            |     0 | Message               |             |      18 |
-  |            |     0 | Spark                 |             |      18 |
-  |        2/2 |     1 | Ear Piercing Scream   |             |      19 |
-  |        1/1 |     1 | Mage Armor            |             |      19 |
-  |        1/1 |     1 | Fog Cloud             |             |      19 |
-  |        1/1 |     1 | Silent Image          |             |      19 |
-  |          1 |     1 | Burning Hands         |             |      19 |
-  |          1 |     2 | Communal Mount        |             |      20 |
-  |        1/1 |     2 | Detect Thoughts       |             |      20 |
-  |          1 |     2 | Web Shelter           |             |      20 |
-  |          1 |     2 | Hold Person           |             |      20 |
-  |        2/2 |     2 | Cure Moderate Wounds  |             |      20 |
-  |          1 |     3 | Remove Curse          |             |      21 |
-  |          1 |     3 | Stinking Cloud        |             |      21 |
-  |          1 |     3 | Suggestion            |             |      21 |
-  |          1 |     3 | Unadultrated Loathing |             |      21 |
-  |          1 |     3 | Deeper Darkness       |             |      21 |
-  |          1 |     4 | Threefold Aspect      |             |      22 |
-  |          1 |     4 | Dimension Door        |             |      22 |
-  |          1 |     4 | Black Tentacles       |             |      22 |
-  |        1/1 |     4 | Shadow Conjuration    |             |      22 |
-  |        1/1 |     5 | Baleful Polymorph     |             |      23 |
-  |        1/1 |     5 | Magic Jar             |             |      23 |
-  |------------+-------+-----------------------+-------------+---------|
+  |------------+-------+----------------------+-------------+---------|
+  | # Prepared | Level | Name                 | Description | Save DC |
+  |------------+-------+----------------------+-------------+---------|
+  |            |     0 | Detect Magic         |             |      18 |
+  |            |     0 | Dancing Lights       |             |      18 |
+  |            |     0 | Message              |             |      18 |
+  |            |     0 | Spark                |             |      18 |
+  | 2/2        |     1 | Ear Piercing Scream  |             |      19 |
+  | 1/1        |     1 | Mage Armor           |             |      19 |
+  | 1/1        |     1 | Fog Cloud            |             |      19 |
+  | 1/1        |     1 | Silent Image         |             |      19 |
+  | 1          |     1 | Burning Hands        |             |      19 |
+  | 1          |     2 | Communal Mount       |             |      20 |
+  | 1/1        |     2 | Detect Thoughts      |             |      20 |
+  | 1          |     2 | Web Shelter          |             |      20 |
+  | 1/1        |     2 | Hold Person          |             |      20 |
+  | 1/2        |     2 | Cure Moderate Wounds |             |      20 |
+  | 0/1        |     3 | Remove Curse         |             |      21 |
+  | 1          |     3 | Stinking Cloud       |             |      21 |
+  | 1          |     3 | Suggestion           |             |      21 |
+  | 2/2        |     3 | Dispel Magic         |             |      21 |
+  | 1          |     3 | Deeper Darkness      |             |      21 |
+  | 1          |     4 | Threefold Aspect     |             |      22 |
+  | 1          |     4 | Dimension Door       |             |      22 |
+  | 1          |     4 | Black Tentacles      |             |      22 |
+  | 1/1        |     4 | Shadow Conjuration   |             |      22 |
+  | 1/1        |     5 | Baleful Polymorph    |             |      23 |
+  | 1/1        |     5 | Magic Jar            |             |      23 |
+  |------------+-------+----------------------+-------------+---------|
 
 ** Special Abilities
    #+NAME:SpecialAbilities

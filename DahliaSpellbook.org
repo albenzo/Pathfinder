@@ -52,6 +52,7 @@
    Vomit Swarm : personal : 1 rd/lvl : Vomit a swarm of spiders, wasps(cl8), or army ants(cl12)
    Web shelter : 25+5/2lvl | 5-10sphere | 5-20 hemisphere : 1 hr/lvl : Create a comfortable shelter made of webbing
 ** Level 3
+   Dispel Magic : 100+10/lvl : instant : Dispels magic
    Remove Curse : touch : instant : Frees object or person from curse
    Sepia snake sigil : Touch : permanent|1d4+1 day/lvl : Creates text symbol that immobilizes the reader
    Stinking cloud : 100+10/lvl|20rad : 1 rd/lvl : Nauseating vapors, 1 rd/lvl
