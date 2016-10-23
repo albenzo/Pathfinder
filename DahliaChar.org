@@ -80,9 +80,9 @@
   #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
 
   #+NAME:Experience
-  |------------+-------+-------|
-  | Experience | 82183 | 95000 |
-  |------------+-------+-------|
+  |------------+--------+--------|
+  | Experience | 100932 | 105000 |
+  |------------+--------+--------|
 
   #+NAME:Feats
   |---------------------+------------------------------------|
@@ -266,20 +266,20 @@
 
    # Worn magic items
    #+NAME:WornEquipment
-   |-----------+----------------------|
-   | Head      |                      |
-   | Face      |                      |
-   | Throat    | Amulet Nat (2)       |
-   | Shoulders | Cloak of Resis (1)   |
-   | Body      |                      |
-   | Torso     | Cackling Hags Blouse |
-   | Arms      |                      |
-   | Hands     |                      |
-   | Ring      | Ring of Sustenence   |
-   | Ring      | Ring of Prot (2)     |
-   | Waist     | Belt of Dex (2)      |
-   | Feet      |                      |
-   |-----------+----------------------|
+   |-----------+---------------------------|
+   | Head      |                           |
+   | Face      |                           |
+   | Throat    | Amulet Nat (2)            |
+   | Shoulders | Cloak of Resis (1)        |
+   | Body      |                           |
+   | Torso     | Cackling Hags Blouse      |
+   | Arms      |                           |
+   | Hands     | Gloves of Arrow Snatching |
+   | Ring      | Ring of Sustenence        |
+   | Ring      | Ring of Prot (2)          |
+   | Waist     | Belt of Dex (2)           |
+   | Feet      |                           |
+   |-----------+---------------------------|
 
    #+NAME:Armor
    |---+---------+--------------+---------+----+---------+---------+----------------+------+------+----------|
@@ -297,16 +297,17 @@
 
 ** Magic Items
    #+NAME:MagicItems
-   |------------------+---------+--------------|
-   | Item             | Charges | Caster Level |
-   |------------------+---------+--------------|
-   | Pearl of Power 2 |       1 | 17           |
-   |------------------+---------+--------------|
+   |-------------------+---------+--------------|
+   | Item              | Charges | Caster Level |
+   |-------------------+---------+--------------|
+   | Pearl of Power 2  |       1 |           17 |
+   | Bead of Newt Prev |       1 |              |
+   |-------------------+---------+--------------|
    
 ** Wealth
    #+NAME:Wealth
    |----------+--------|
-   | Platinum |     57 |
+   | Platinum |      7 |
    | Gold     |    427 |
    | Silver   |      6 |
    | Copper   |      8 |
@@ -377,7 +378,7 @@
   |            |     0 | Message              |             |      18 |
   |            |     0 | Spark                |             |      18 |
   | 2/2        |     1 | Ear Piercing Scream  |             |      19 |
-  | 0/1        |     1 | Mage Armor           |             |      19 |
+  | 2/2        |     1 | Mage Armor           |             |      19 |
   | 1/1        |     1 | Fog Cloud            |             |      19 |
   | 1/1        |     1 | Silent Image         |             |      19 |
   | 0/1        |     1 | Burning Hands        |             |      19 |
@@ -394,10 +395,10 @@
   | 1/1        |     3 | Deeper Darkness      |             |      21 |
   | 1          |     4 | Threefold Aspect     |             |      22 |
   | 1          |     4 | Dimension Door       |             |      22 |
-  | 0/1        |     4 | Black Tentacles      |             |      22 |
+  | 1/1        |     4 | Black Tentacles      |             |      22 |
   | 1/1        |     4 | Shadow Conjuration   |             |      22 |
   | 1/1        |     5 | Baleful Polymorph    |             |      23 |
-  | 1/1        |     5 | Magic Jar            |             |      23 |
+  | 0/1        |     5 | Magic Jar            |             |      23 |
   |------------+-------+----------------------+-------------+---------|
 
 ** Special Abilities
