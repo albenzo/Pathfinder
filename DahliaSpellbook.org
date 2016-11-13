@@ -7,6 +7,8 @@
     Deeper Darkness : Touch : 10 min/lvl : 60rad of supernatural shadow down two light steps
 *** Level 4
     Shadow Conjuration : Varies : Varies : Mimics conjuration below 4th level, but only 20% real
+*** Level 5
+    Shadow Evocation : Varies : Varies : Mimics evocation spell below 5th level, but only 40% real
 * Learned Spells
 ** Level 0
    Arcane Mark : Touch : Permanent : Inscribes a personal rune on an object or creature (visible or invisible).
@@ -65,6 +67,8 @@
    Threefold Aspect : personal : 24 hr : Appear older or younger
 ** Level 5
    Baleful Polymorph : 25+5ft/2lvl : Fort save to turn creature to cr1 animal, will to keep mind
+   Dominate Person : 25+5ft/2lvl : 1 day/lvl : Will save or becomes under the control of caster 
+   Hold Monster : 100+10/lvl : 1 rd/lvl : As Hold Person but with any living creature
    Magic Jar : 100+10/lvl : 1 hr/lvl : Possess creatures
 * Spells I WANT
 ** Level 1
