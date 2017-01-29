@@ -62,7 +62,7 @@
    Unadulterated Loathing : 25+5/2lvl : 1 day/lvl : Target is compelled to avoid another creature
 ** Level 4
    (Mythic Aug) Black Tentacles : 100+10/lvl : 1 rd/lvl : Tentacles grapple all creatures within 20 spread
-   Dimension Door : 400+40/lvl : instant : Teleports you a short distance
+   (Mythic Aug) Dimension Door : 400+40/lvl : instant : Teleports you a short distance
    Phantasmal Killer : 100+10/lvl : instant : Fearsome illusion kills subject or deals 3d6 damage
    Threefold Aspect : personal : 24 hr : Appear older or younger
 ** Level 5
