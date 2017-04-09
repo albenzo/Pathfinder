@@ -70,6 +70,9 @@
    Dominate Person : 25+5ft/2lvl : 1 day/lvl : Will save or becomes under the control of caster 
    Hold Monster : 100+10/lvl : 1 rd/lvl : As Hold Person but with any living creature
    Magic Jar : 100+10/lvl : 1 hr/lvl : Possess creatures
+** Level 6
+   Dust Form : self : Turn into dust to become incorporeal
+   Greater Dispel Magic : 100+10/lvl : Like dispel magic but better
 * Spells I WANT
 ** Level 1
    Chill Touch : Touch : Instant : 1d6+1str cold, undead will save or flee like panicked for 1d4+cl rds

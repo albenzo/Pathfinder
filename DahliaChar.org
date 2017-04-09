@@ -5,7 +5,7 @@
 #+AUTHOR: Lucas Meyers (Adapted from Jesus Ramos)
 
 * Basic Character Info
-  - Name :: Dahlia
+  - Name :: Dahlia Coreopsideae
   - Race :: Elf
   - Gender :: Female
   - Height :: 5'7""
@@ -16,7 +16,7 @@
   - Background Occupation :: Hag/Witch Hunter
   - Languages :: Common, Elvish, Orc, Celestial, Draconic, Old Gnomish
 		 Sylvan, Dwarvish, Halfling, Old Thosian, Infernal,
-		 Abyssal, Necril, Protean, Aklo, Tengu, Giant
+		 Abyssal, Necril, Protean, Aklo, Tengu, Giant, Undercommon
 
   #+NAME:Buffs
   |----------------+--------+-----+-----+-----+-----+-----+-----+----+------|
@@ -41,12 +41,12 @@
   |---+--------------+-------+----------+------+----------+---------+------|
   | ! | Stat         | Total | Modifier | Base | Inherent | Enhance | Misc |
   |---+--------------+-------+----------+------+----------+---------+------|
-  | # | Strength     |     5 |       -3 |    7 |          |      -2 |      |
-  | # | Dexterity    |    12 |        1 |   14 |          |      -2 |      |
-  | # | Constitution |    12 |        1 |   12 |          |         |      |
-  | # | Intelligence |    28 |        9 |   24 |          |       4 |      |
-  | # | Wisdom       |    16 |        3 |   12 |          |       4 |      |
-  | # | Charisma     |     8 |       -1 |    8 |          |         |      |
+  | # | Strength     |     5 | -3       |    7 |          |      -2 |      |
+  | # | Dexterity    |    12 | 1        |   14 |          |      -2 |      |
+  | # | Constitution |    12 | 1        |   12 |          |         |      |
+  | # | Intelligence |    28 | 9        |   24 |          |       4 |      |
+  | # | Wisdom       |    16 | 3        |   12 |          |       4 |      |
+  | # | Charisma     |     8 | -1       |    8 |          |         |      |
   |---+--------------+-------+----------+------+----------+---------+------|
   #+TBLFM: $3=vsum($5..$8)::$4=floor(($3 - 10) / 2)
 
@@ -63,12 +63,12 @@
   |---+--------+----+---------------+-----+--------+------+-----+------+--------|
   | ! |     HP | HD | Class Name    | BAB | Skills | Fort | Ref | Will | Levels |
   |---+--------+----+---------------+-----+--------+------+-----+------+--------|
-  |   |     68 | d6 | Witch         |   5 |     10 |    3 |   3 |    7 |     10 |
+  |   |     76 | d6 | Witch         |   5 |     10 |    3 |   3 |    7 |     11 |
   |   |      6 |    | Mythic        |     |        |      |     |      |        |
   |---+--------+----+---------------+-----+--------+------+-----+------+--------|
   |   | Totals |    | Favored Class |     |        |      |     |      |        |
   |---+--------+----+---------------+-----+--------+------+-----+------+--------|
-  | # |     74 |    | Witch         |   5 |     10 |    3 |   3 |    7 |     10 |
+  | # |     82 |    | Witch         |   5 |     10 |    3 |   3 |    7 |     11 |
   |---+--------+----+---------------+-----+--------+------+-----+------+--------|
   #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
 
@@ -78,16 +78,18 @@
   |------------+--------+--------|
 
   #+NAME:Feats
-  |---------------------+------------------------------------|
-  | Name                | Description                        |
-  |---------------------+------------------------------------|
-  | Bonus Hex           | Fortune                            |
-  | Bonus Hex           | Cauldron                           |
-  | Bonus Hex           | Flight                             |
-  | Improved Familiar   | Opens up access to other familiars |
-  | Craft Wondrous Item | Can craft wondrous items           |
-  | Mythic Spell Lore   | Gain one mythic spell per tier     |
-  |---------------------+------------------------------------|
+  |---------------------+-------------------------------------|
+  | Name                | Description                         |
+  |---------------------+-------------------------------------|
+  | Bonus Hex           | Fortune                             |
+  | Bonus Hex           | Cauldron                            |
+  | Bonus Hex           | Flight                              |
+  | Improved Familiar   | Opens up access to other familiars  |
+  | Craft Wondrous Item | Can craft wondrous items            |
+  | Mythic Spell Lore   | Gain one mythic spell per tier      |
+  | Split Hex           | When you use a hex you can cast it  |
+  |                     | on another target within 30ft of it |
+  |---------------------+-------------------------------------|
 
   #+NAME:Features
   |------------------+------------------------------------------------------|
@@ -121,19 +123,19 @@
   |---+---------------+-------+------+---------+---------+------|
   | ! | Saving Throws | Total | Base | Ability | Enhance | Misc |
   |---+---------------+-------+------+---------+---------+------|
-  | # | Fortitude     |     5 |    3 |       1 |       1 |      |
-  | # | Reflex        |     5 |    3 |       1 |       1 |      |
-  | # | Will          |    11 |    7 |       3 |       1 |      |
+  | # | Fortitude     |     7 |    3 |       1 |       3 |      |
+  | # | Reflex        |     7 |    3 |       1 |       3 |      |
+  | # | Will          |    13 |    7 |       3 |       3 |      |
   |---+---------------+-------+------+---------+---------+------|
   #+TBLFM: $5=remote(Stats,@3$Modifier)::@2$3..@4$3=vsum($4..$7)::@2$4=remote(Class, @>$Fort)::@2$5=remote(Stats, @4$Modifier)::@3$4=remote(Class, @>$Ref)::@4$4=remote(Class, @>$Will)::@4$5=remote(Stats, @6$Modifier)
 
   #+NAME:HP
   |---+--------------+----|
-  | # | Base         | 74 |
+  | # | Base         | 82 |
   |   | Temporary HP |    |
-  |   | Current HP   | 74 |
+  |   | Current HP   | 64 |
   |---+--------------+----|
-  | # | Total        | 74 |
+  | # | Total        | 82 |
   |---+--------------+----|
   #+TBLFM: @1$3=remote(Class, @>$HP)::@4$3=@1$3+@2$3
 
@@ -141,9 +143,9 @@
   |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
   | ! | Type      | Total | Base | Armor | Shield | Dex | Size | Dodge | Natural | Deflect | Misc |
   |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
-  | # | AC        |    22 |   10 |     4 | 3      |   1 |    0 |       |       2 |       2 |      |
-  | # | Touch     |    13 |   10 |   N/A | N/A    |   1 |    0 |       |     N/A |       2 |      |
-  | # | Flat-foot |    18 |   10 |     4 | N/A    | N/A |    0 | N/A   |       2 |       2 |      |
+  | # | AC        |    24 |   10 |     4 | 3      |   1 |    0 |       |       3 |       3 |      |
+  | # | Touch     |    14 |   10 |   N/A | N/A    |   1 |    0 |       |     N/A |       3 |      |
+  | # | Flat-foot |    20 |   10 |     4 | N/A    | N/A |    0 | N/A   |       3 |       3 |      |
   |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
   #+TBLFM: @2$3..@>$3=vsum($4..$12);N::@2$5=remote(Armor,@2$5)::@4$5=remote(Armor,@2$5)::@2$6=remote(Armor,@3$5)::@2$7..@3$7=remote(Stats,@3$Modifier)::@2$8..@4$8=remote(Size,@2$1)
 
@@ -192,7 +194,7 @@
   | # |                   |               |       | Appraise             | Int  |      9 |       |       9 |         |      |
   | # |                   |               |       | Bluff                | Cha  |     -1 |       |      -1 |         |      |
   | # |                   |             1 |       | Climb                | Str  |     -3 |       |      -3 |         |      |
-  | # |                   |               |     1 | Craft: Alchemy       | Int  |     28 |    10 |       9 |       3 |    6 |
+  | # |                   |               |     1 | Craft: Alchemy       | Int  |     29 |    11 |       9 |       3 |    6 |
   | # |                   |               |     1 | Craft:               | Int  |      9 |       |       9 |         |      |
   | # |                   |               |       | Diplomacy            | Cha  |     -1 |       |      -1 |         |      |
   | # |                 1 |             1 |       | Disable Device       | Dex  |      - |       |       1 |         |      |
@@ -202,30 +204,30 @@
   | # |                 1 |               |       | Handle Animal        | Cha  |      - |       |      -1 |         |      |
   | # |                   |               |     1 | Heal                 | Wis  |      3 |       |       3 |         |      |
   | # |                   |               |       | Intimidate           | Cha  |     -1 |       |      -1 |         |      |
-  | # |                 1 |               |     1 | Knowledge: Arcana    | Int  |     22 |    10 |       9 |       3 |      |
+  | # |                 1 |               |     1 | Knowledge: Arcana    | Int  |     23 |    11 |       9 |       3 |      |
   | # |                 1 |               |       | Knowledge: Dungeon   | Int  |     10 |     1 |       9 |         |      |
   | # |                 1 |               |       | Knowledge: Engineer  | Int  |     10 |     1 |       9 |         |      |
-  | # |                 1 |               |       | Knowledge: Geography | Int  |     10 |     1 |       9 |         |      |
-  | # |                 1 |               |     1 | Knowledge: History   | Int  |     22 |    10 |       9 |       3 |      |
+  | # |                 1 |               |       | Knowledge: Geography | Int  |     12 |     3 |       9 |         |      |
+  | # |                 1 |               |     1 | Knowledge: History   | Int  |     23 |    11 |       9 |       3 |      |
   | # |                 1 |               |       | Knowledge: Local     | Int  |     10 |     1 |       9 |         |      |
-  | # |                 1 |               |     1 | Knowledge: Nature    | Int  |     22 |    10 |       9 |       3 |      |
+  | # |                 1 |               |     1 | Knowledge: Nature    | Int  |     23 |    11 |       9 |       3 |      |
   | # |                 1 |               |       | Knowledge: Nobility  | Int  |     10 |     1 |       9 |         |      |
-  | # |                 1 |               |     1 | Knowledge: Planes    | Int  |     22 |    10 |       9 |       3 |      |
+  | # |                 1 |               |     1 | Knowledge: Planes    | Int  |     23 |    11 |       9 |       3 |      |
   | # |                 1 |               |       | Knowledge: Religion  | Int  |     10 |     1 |       9 |         |      |
-  | # |                 1 |               |       | Linguistics          | Int  |     19 |    10 |       9 |         |      |
-  | # |                   |               |       | Perception           | Wis  |     15 |    10 |       3 |         |    2 |
+  | # |                 1 |               |       | Linguistics          | Int  |     20 |    11 |       9 |         |      |
+  | # |                   |               |       | Perception           | Wis  |     16 |    11 |       3 |         |    2 |
   | # |                   |               |       | Perform:             | Cha  |     -1 |       |      -1 |         |      |
   | # |                 1 |               |       | Profession:          | Wis  |      - |       |       3 |         |      |
   | # |                   |             1 |       | Ride                 | Dex  |      1 |       |       1 |         |      |
   | # |                   |               |       | Sense Motive         | Wis  |      3 |       |       3 |         |      |
   | # |                 1 |             1 |       | Sleight of Hand      | Dex  |      - |       |       1 |         |      |
-  | # |                 1 |               |     1 | Spellcraft           | Int  |     22 |    10 |       9 |       3 |      |
+  | # |                 1 |               |     1 | Spellcraft           | Int  |     23 |    11 |       9 |       3 |      |
   | # |                   |             1 |       | Stealth              | Dex  |      1 |       |       1 |         |      |
   | # |                   |               |       | Survival             | Wis  |      3 |       |       3 |         |      |
   | # |                   |             1 |       | Swim                 | Str  |     -3 |       |      -3 |         |      |
-  | # |                 1 |               |     1 | Use Magic Device     | Cha  |     12 |    10 |      -1 |       3 |      |
+  | # |                 1 |               |     1 | Use Magic Device     | Cha  |     13 |    11 |      -1 |       3 |      |
   |---+-------------------+---------------+-------+----------------------+------+--------+-------+---------+---------+------|
-  | # |                   |               |       |                      |      | Total: |   101 |         |         |      |
+  | # |                   |               |       |                      |      | Total: |   112 |         |         |      |
   |---+-------------------+---------------+-------+----------------------+------+--------+-------+---------+---------+------|
   #+TBLFM: @II$7..@III$7=if(($2 > 0 && $8 > 0) || ($2 == 0) ,vsum($8..$11)+($3*remote(Armor, @>$Penalty)), string("-"))::@II$9..@III$9='(cond ((string= $6 "Str") remote(Stats, @2$Modifier)) ((string= $6 "Dex") remote(Stats, @3$Modifier)) ((string= $6 "Int") remote(Stats, @5$Modifier)) ((string= $6 "Wis") remote(Stats, @6$Modifier)) ((string= $6 "Cha") remote(Stats, @7$Modifier)))::@II$10..@III$10=if($4 > 0 && $8 > 0, 3, string(""))::@>$8=vsum(@2$8..@-1$8)
   
@@ -242,13 +244,13 @@
    |   | Ring of Sustenance    |        1 |                  |               |
    |   | Cauldron              |        1 |                  |             5 |
    |   | Traveler's Anytool    |        1 |                  |             2 |
-   |   | Ring of Prot (2)      |        1 |                  |               |
-   |   | Ring of Nat (2)       |        1 |                  |               |
+   |   | Ring of Prot (3)      |        1 |                  |               |
+   |   | Ring of Nat (3)       |        1 |                  |               |
    |   | Mithral Buckler (2)   |        1 |                3 |             3 |
    |   | Silver Mirror         |        1 |                  |             1 |
    |   | Spell component pouch |        1 |                2 |             2 |
    |   | Foaming Powder        |        1 |                1 |             0 |
-   |   | Cloak of Res (1)      |        1 |                1 |             1 |
+   |   | Cloak of Res (3)      |        1 |                1 |             1 |
    |   | Alchemist's Lab       |        1 |                0 |            40 |
    |   | Gem worth 100         |        1 |                0 |             0 |
    |   | Research materials    |        1 |                0 |            10 |
@@ -256,6 +258,7 @@
    |   | Bound Book            |        1 |                  |               |
    |   | Cube with needles     |        1 |                  |               |
    |   | Gallacles tools       |        ? |                  |               |
+   |   | cloak of Res (1)      |          |                  |               |
    |---+-----------------------+----------+------------------+---------------|
    | # | Total Weight:         |          |               12 |            69 |
    |---+-----------------------+----------+------------------+---------------|
@@ -266,14 +269,14 @@
    |-----------+---------------------------|
    | Head      |                           |
    | Face      |                           |
-   | Throat    | Amulet Nat (2)            |
-   | Shoulders | Cloak of Resis (1)        |
+   | Throat    | Amulet Nat (3)            |
+   | Shoulders | Cloak of Resis (3)        |
    | Body      |                           |
    | Torso     | Cackling Hags Blouse      |
    | Arms      |                           |
    | Hands     | Gloves of Arrow Snatching |
    | Ring      | Ring of Sustenence        |
-   | Ring      | Ring of Prot (2)          |
+   | Ring      | Ring of Prot (3)          |
    | Waist     | Belt of Dex (2)           |
    | Feet      |                           |
    |-----------+---------------------------|
@@ -299,16 +302,17 @@
    |-------------------+---------+--------------|
    | Pearl of Power 2  |       1 |           17 |
    | Bead of Newt Prev |       1 |              |
+   | Less. Empow. Rod  |         |              |
+   | Cure light wounds |      99 |            1 |
    |-------------------+---------+--------------|
    
 ** Wealth
    #+NAME:Wealth
    |----------+--------|
    | Platinum |      7 |
-   | Gold     |    427 |
-   | Silver   |      6 |
-   | Copper   |      8 |
-   | Debts    | 216.67 |
+   | Gold     |    606 |
+   | Silver   |      2 |
+   | Copper   |      5 |
    |----------+--------|
 
 ** Bags and Containers
@@ -336,69 +340,72 @@
   | # |      22 |           3 |     5 |           3 |       2 |      |             |
   | # |      23 |           4 |     5 |           3 |       2 |      |             |
   | # |      24 |           5 |     4 |           2 |       2 |      |             |
-  | # |      25 |           6 |     1 |             |       1 |      |             |
+  | # |      25 |           6 |     2 |           1 |       1 |      |             |
   | # |      26 |           7 |     1 |             |       1 |      |             |
   | # |      27 |           8 |     1 |             |       1 |      |             |
-  | # |         |           9 |     1 |             |       1 |      |             |
+  | # |      28 |           9 |     1 |             |       1 |      |             |
   |---+---------+-------------+-------+-------------+---------+------+-------------|
   #+TBLFM: $4=vsum($5..$8)::$2=if($4 > 0, 10+$3+remote(CastingStat, @1$4), string(""))::@3$6..@>$6=max(0, (remote(CastingStat, @1$4)-$3)\4+1)
   # 
 
   #+NAME:CasterLevel
   |--------------+----|
-  | Caster Level | 10 |
+  | Caster Level | 11 |
   |--------------+----|
 
   #+NAME:Concentration
   |---+---------------+-------+------+---------+------|
   | ! |               | Total | Base | Ability | Misc |
   |---+---------------+-------+------+---------+------|
-  | # | Concentration |    19 |   10 |       9 |      |
+  | # | Concentration |    20 |   11 |       9 |      |
   |---+---------------+-------+------+---------+------|
   #+TBLFM: @2$3=vsum($4..$6)::@2$4=remote(CasterLevel, @1$2)::@2$5=remote(CastingStat, @1$4)
 
   #+NAME:SpellRanges
-  |---+--------+-----|
-  | # | Close  |  50 |
-  | # | Medium | 200 |
-  | # | Long   | 800 |
-  |---+--------+-----|
+  |---+--------+------|
+  | # | Close  | 52.5 |
+  | # | Medium |  210 |
+  | # | Long   |  840 |
+  |---+--------+------|
   #+TBLFM: @1$3=25+remote(CasterLevel,@1$2)*5/2::@2$3=100+remote(CasterLevel, @1$2)*10::@3$3=400+remote(CasterLevel, @1$2)*40
 
   # See DahliaSpellBook.org
   #+NAME:Spells
-  |------------+-------+----------------------+-------------+---------|
-  | # Prepared | Level | Name                 | Description | Save DC |
-  |------------+-------+----------------------+-------------+---------|
-  |            |     0 | Detect Magic         |             |      19 |
-  |            |     0 | Dancing Lights       |             |      19 |
-  |            |     0 | Message              |             |      19 |
-  |            |     0 | Spark                |             |      19 |
-  | 1/1        |     1 | Reduce Person        |             |      20 |
-  | 1/1        |     1 | Ear Piercing Scream  |             |      20 |
-  | 2/2        |     1 | Mage Armor           |             |      20 |
-  | 1/1        |     1 | Fog Cloud            |             |      20 |
-  | 2/2        |     1 | Silent Image         |             |      20 |
-  | 0/1        |     1 | Burning Hands        |             |      20 |
-  | 0/2        |     2 | Communal Mount       |             |      21 |
-  | 1/1        |     2 | Detect Thoughts      |             |      21 |
-  | 0/1        |     2 | Web Shelter          |             |      21 |
-  | 2/2        |     2 | Hold Person          |             |      21 |
-  | 2/2        |     2 | Cure Moderate Wounds |             |      21 |
-  | 1/1        |     2 | See invisibility     |             |      21 |
-  | 0/1        |     3 | Remove Curse         |             |      22 |
-  | 1          |     3 | Stinking Cloud       |             |      22 |
-  | 1          |     3 | Suggestion           |             |      22 |
-  | x1/2       |     3 | Dispel Magic         |             |      22 |
-  | 1/1        |     3 | Deeper Darkness      |             |      22 |
-  | 1          |     4 | Threefold Aspect     |             |      23 |
-  | x0/1       |     4 | Dimension Door       |             |      23 |
-  | 1/1        |     4 | Black Tentacles      |             |      23 |
-  | 2/2        |     4 | Shadow Conjuration   |             |      23 |
-  | 1/1        |     5 | Baleful Polymorph    |             |      24 |
-  | 0/1        |     5 | Magic Jar            |             |      24 |
-  | 2/2        |     5 | Shadow Evocation     |             |      24 |
-  |------------+-------+----------------------+-------------+---------|
+  |------------+-------+-----------------------+-------------+---------|
+  | # Prepared | Level | Name                  | Description | Save DC |
+  |------------+-------+-----------------------+-------------+---------|
+  |            |     0 | Detect Magic          |             |      19 |
+  |            |     0 | Dancing Lights        |             |      19 |
+  |            |     0 | Message               |             |      19 |
+  |            |     0 | Spark                 |             |      19 |
+  | 1/1        |     1 | Reduce Person         |             |      20 |
+  | 1/1        |     1 | Ear Piercing Scream   |             |      20 |
+  | 2/2        |     1 | Mage Armor            |             |      20 |
+  | 1/1        |     1 | Fog Cloud             |             |      20 |
+  | 2/2        |     1 | Silent Image          |             |      20 |
+  | 0/1        |     1 | Burning Hands         |             |      20 |
+  | 0/2        |     2 | Communal Mount        |             |      21 |
+  | 1/1        |     2 | Communal Mask Dweomer |             |      21 |
+  | 1/1        |     2 | Detect Thoughts       |             |      21 |
+  | 0/1        |     2 | Web Shelter           |             |      21 |
+  | 1/1        |     2 | Hold Person           |             |      21 |
+  | 2/2        |     2 | Cure Moderate Wounds  |             |      21 |
+  | 1/1        |     2 | See invisibility      |             |      21 |
+  | 0/1        |     3 | Remove Curse          |             |      22 |
+  | 1          |     3 | Stinking Cloud        |             |      22 |
+  | 1          |     3 | Suggestion            |             |      22 |
+  | 2/2        |     3 | Dispel Magic          |             |      22 |
+  | 1/1        |     3 | Deeper Darkness       |             |      22 |
+  | 1          |     4 | Threefold Aspect      |             |      23 |
+  | 1/1        |     4 | Dimension Door        |             |      23 |
+  | 1/1        |     4 | Black Tentacles       |             |      23 |
+  | 2/2        |     4 | Shadow Conjuration    |             |      23 |
+  | 1/1        |     5 | Baleful Polymorph     |             |      24 |
+  | 0/1        |     5 | Magic Jar             |             |      24 |
+  | 2/2        |     5 | Shadow Evocation      |             |      24 |
+  | 1/1        |     6 | Dust Form             |             |      25 |
+  | 1/1        |     6 | Greater Dispel Magic  |             |      25 |
+  |------------+-------+-----------------------+-------------+---------|
 
 ** Special Abilities
    #+NAME:SpecialAbilities
@@ -479,7 +486,7 @@
    |---+----+----+----------------+-----+--------+------+-----+------+--------|
    | ! | HP | HD | Class Name     | BAB | Skills | Fort | Ref | Will | Levels |
    |---+----+----+----------------+-----+--------+------+-----+------+--------|
-   | # | 34 | d6 | Luminal Sprite |   5 | -      |    3 |   3 |    7 |        |
+   | # | 38 | d6 | Luminal Sprite |   5 | -      |    3 |   3 |    7 |        |
    |---+----+----+----------------+-----+--------+------+-----+------+--------|
    #+TBLFM: @2$2=remote(Class,@2$2)\2::@2$3=remote(Class,@2$3)::@2$5=remote(Class,@2$5)::@2$7=remote(Class,@2$7)::@2$8=remote(Class,@2$8)::@2$9=remote(Class,@2$9)
 
@@ -525,11 +532,11 @@
 
    #+NAME:FHP
    |---+--------------+----|
-   | # | Base         | 34 |
-   |   | Temporary HP |  0 |
-   |   | Current HP   | 34 |
+   | # | Base         | 38 |
+   |   | Temporary HP | 51 |
+   |   | Current HP   | 51 |
    |---+--------------+----|
-   | # | Total        | 34 |
+   | # | Total        | 38 |
    |---+--------------+----|
    #+TBLFM: @1$3=remote(FClass, @2$HP)::@4$3=@1$3+@2$3
 
@@ -537,7 +544,7 @@
    |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
    | ! | Type      | Total | Base | Armor | Shield | Dex | Size | Dodge | Natural | Deflect | Misc |
    |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
-   | # | AC        |    21 |   10 |     0 | 0      |   3 |    2 |       |       6 |         |      |
+   | # | AC        |    22 |   10 |     0 | 0      |   3 |    2 |       |       7 |         |      |
    | # | Touch     |    15 |   10 |   N/A | N/A    |   3 |    2 |       |     N/A |         |      |
    | # | Flat-foot |    18 |   10 |     0 | N/A    | N/A |    2 | N/A   |       6 |         |      |
    |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
@@ -629,7 +636,7 @@
   
    #+NAME:FCasterLevel
    |--------------+----|
-   | Caster Level | 10 |
+   | Caster Level | 11 |
    |--------------+----|
    #+TBLFM: @1$2=remote(CasterLevel, @1$2)
 
@@ -637,16 +644,16 @@
    |---+---------------+-------+------+---------+------|
    | ! |               | Total | Base | Ability | Misc |
    |---+---------------+-------+------+---------+------|
-   | # | Concentration |    12 |   10 |       2 |      |
+   | # | Concentration |    13 |   11 |       2 |      |
    |---+---------------+-------+------+---------+------|
    #+TBLFM: @2$3=vsum($4..$6)::@2$4=remote(FCasterLevel, @1$2)::@2$5=remote(FCastingStat, @1$4)
 
    #+NAME:FSpellRanges
-   |---+--------+-----|
-   | # | Close  |  50 |
-   | # | Medium | 200 |
-   | # | Long   | 800 |
-   |---+--------+-----|
+   |---+--------+------|
+   | # | Close  | 52.5 |
+   | # | Medium |  210 |
+   | # | Long   |  840 |
+   |---+--------+------|
    #+TBLFM: @1$3=25+remote(FCasterLevel,@1$2)*5/2::@2$3=100+remote(FCasterLevel, @1$2)*10::@3$3=400+remote(FCasterLevel, @1$2)*40
 
    #+Name:FSpells
