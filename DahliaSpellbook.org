@@ -1,14 +1,18 @@
 * Patron Spells
-*** Level 1
-    Silent Image : 400+40/lvl : concentration : Creates minor illusion of your design
-*** Level 2
-    Darkness : Touch : 1 min/lvl : 20rad of supernatural shadow down one light step
-*** Level 3
-    Deeper Darkness : Touch : 10 min/lvl : 60rad of supernatural shadow down two light steps
-*** Level 4
-    Shadow Conjuration : Varies : Varies : Mimics conjuration below 4th level, but only 20% real
-*** Level 5
-    Shadow Evocation : Varies : Varies : Mimics evocation spell below 5th level, but only 40% real
+** Level 1
+   Silent Image : 400+40/lvl : concentration : Creates minor illusion of your design
+** Level 2
+   Darkness : Touch : 1 min/lvl : 20rad of supernatural shadow down one light step
+** Level 3
+   Deeper Darkness : Touch : 10 min/lvl : 60rad of supernatural shadow down two light steps
+** Level 4
+   Shadow Conjuration : Varies : Varies : Mimics conjuration below 4th level, but only 20% real
+** Level 5
+   Shadow Evocation : Varies : Varies : Mimics evocation spell below 5th level, but only 20% real
+** Level 6
+   Shadow Walk : Touch : 1 hr/lvl : Take creature per level and travel on border of the shadow plane.
+** Level 7
+   Greater Shadow Conjuration : Varies : Varies : Mimics conjuration below 7th level but only 60% real
 * Learned Spells
 ** Level 0
    Arcane Mark : Touch : Permanent : Inscribes a personal rune on an object or creature (visible or invisible).
@@ -38,7 +42,7 @@
    Infernal Healing : Touch : 1 min : Touch a creature with devils blood, giving it fast healing 1
    Mage armor : Touch : 1 hr/lvl : Gives subject +4 armor bonus
    Mask Dweomer : Touch : 1 day/lvl : Hides presence of spell from detect magic
-   Obscuring Mist : 20 rad on caster : 1 min/lvl : Fog surrounds you
+   Obscuring Mist (Mythic) : 20 rad on caster : 1 min/lvl : Fog surrounds you
    Peacebond : 25+5/2lvl : 1min/lvl : Locks a weapon in place on the targets body
    Reduce person : 25+5/2lvl : 1 min/lvl : Humanoid creature halves in size
    Unseen servant : 25+5/2lvl : 1 hr/lvl : Invisible force obeys your commands
@@ -62,17 +66,28 @@
    Unadulterated Loathing : 25+5/2lvl : 1 day/lvl : Target is compelled to avoid another creature
 ** Level 4
    (Mythic Aug) Black Tentacles : 100+10/lvl : 1 rd/lvl : Tentacles grapple all creatures within 20 spread
+   (Mythic Aug) Detect Scrying : 40ft rad : 24 hrs : Detect any sensors around you. Can find visual image and picture with cl check
    (Mythic Aug) Dimension Door : 400+40/lvl : instant : Teleports you a short distance
    Phantasmal Killer : 100+10/lvl : instant : Fearsome illusion kills subject or deals 3d6 damage
    Threefold Aspect : personal : 24 hr : Appear older or younger
 ** Level 5
    Baleful Polymorph : 25+5ft/2lvl : Fort save to turn creature to cr1 animal, will to keep mind
-   Dominate Person : 25+5ft/2lvl : 1 day/lvl : Will save or becomes under the control of caster 
+   (Mythic Aug) Dominate Person : 25+5ft/2lvl : 1 day/lvl : Will save or becomes under the control of caster 
    Hold Monster : 100+10/lvl : 1 rd/lvl : As Hold Person but with any living creature
    Magic Jar : 100+10/lvl : 1 hr/lvl : Possess creatures
 ** Level 6
+   Cloak of Dreams : 5ft rad : Anyone within 5ft make a will save or fall asleep
    Dust Form : self : Turn into dust to become incorporeal
    Greater Dispel Magic : 100+10/lvl : Like dispel magic but better
+   Swarm Skin : self : Turn into a bunch of swarms
+** Level 7
+   Chain Lightening : 400+40ft/lvl : 1 + 1 2ndary trget/lvl : 1d6/cl lvl and secondary target per cl lvl. Reflex is 2 lower.
+   Phase Door : Touch : 1 use/2lvl : Create a passage 5x8ft and 10+5ft/3lvl. Can set triggers
+   (Mythic) Plane Shift : Tuning Fork : Touch (8 max) : Shift to another plane. Cannot be accurate and requires tuning fork.
+   Insanity : 100+10ft/lvl : 1 : Target is permanently confused
+** Level 8
+   Demand : : Acts as sending but the message can contain a suggestion. Must be 25 words or less. Subject can reply
+   Mind Blank : 25+5ft/2lvl : 24hr : Protected from all spells that gather info via divination. +8 vs mind affecting
 * Spells I WANT
 ** Level 1
    Chill Touch : Touch : Instant : 1d6+1str cold, undead will save or flee like panicked for 1d4+cl rds
