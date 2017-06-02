@@ -10,7 +10,7 @@ Mythic: 15/15
   - Height :: 5'7""
   - Weight :: 99 lbs
   - Age :: 139
-  - Alignment :: Chaotic Good
+  - Alignment :: Beyond Morality (Mythic)
   - Deity :: Shadow Patron
   - Background Occupation :: Hag/Witch Hunter
   - Languages :: Common, Elvish, Orc, Celestial, Draconic, Old Gnomish,
