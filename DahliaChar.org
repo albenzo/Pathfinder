@@ -1,5 +1,5 @@
 # -*- org-emphasis-alist: nil -*-
-Mythic: 15/15
+
 #+TITLE: Pathfinder Character Sheet
 #+AUTHOR: Lucas Meyers (Adapted from Jesus Ramos)
 
@@ -18,6 +18,7 @@ Mythic: 15/15
 		 Abyssal, Necril, Protean, Aklo, Tengu, Giant, Undercommon,
 		 Auran,
 		 New Dimension Common, New Dimension Elvish
+  - Mythic Power :: 15/15
 
   #+NAME:Buffs
   |----------------+--------+-----+-----+-----+-----+-----+-----+----+------|
