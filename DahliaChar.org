@@ -235,7 +235,7 @@
   |---+-------------------+---------------+-------+----------------------+------+--------+-------+---------+---------+------|
   | # |                   |               |       |                      |      | Total: |   172 |         |         |      |
   |---+-------------------+---------------+-------+----------------------+------+--------+-------+---------+---------+------|
-  #+TBLFM: @II$7..@III$7=if(($2 > 0 && $8 > 0) || ($2 == 0) ,vsum($8..$11)+($3*remote(Armor, @>$Penalty)), string("-"))::@II$9..@III$9='(cond ((string= $6 "Str") remote(Stats, @2$Modifier)) ((string= $6 "Dex") remote(Stats, @3$Modifier)) ((string= $6 "Int") remote(Stats, @5$Modifier)) ((string= $6 "Wis") remote(Stats, @6$Modifier)) ((string= $6 "Cha") remote(Stats, @7$Modifier)))::@II$10..@III$10=if($4 > 0 && $8 > 0, 3, string(""))::@>$8=vsum(@2$8..@-1$8)
+  #+TBLFM:@2$7..@-1$7=if(($2 > 0 && $8 > 0) || ($2 == 0), vsum($8..$11)+($3*remote(Armor, @>$Penalty)), string("-"))::@2$9..@-1$9='(cond ((string= $6 "Str") remote(Stats, @2$Modifier)) ((string= $6 "Dex") remote(Stats, @3$Modifier)) ((string= $6 "Int") remote(Stats, @5$Modifier)) ((string= $6 "Wis") remote(Stats, @6$Modifier)) ((string= $6 "Cha") remote(Stats, @7$Modifier)))::@2$10..@-1$10=if($4 > 0 && $8 > 0, 3, string(""))::@>$8=vsum(@2$8..@-1$8)
 
   |-----------------|
   | Crafting Skills |
