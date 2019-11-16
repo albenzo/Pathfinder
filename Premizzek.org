@@ -121,17 +121,17 @@
   |-----------------+------------------------------------------------|
 
   #+NAME:Traits
-  |--------------------------------------+-------------------------------------------------|
-  | Name                                 | Description                                     |
-  |--------------------------------------+-------------------------------------------------|
-  | Magical Knack                        | +2 to sorcerer caster level up to hit die.      |
-  | Numerological gift (adopted Dhampir) | Once per day when a (3d6 at creation) is rolled |
-  |                                      | you may treat it as a natural 20.               |
-  | Never stop shooting                  | May act as disabled at zero or lower but only   |
-  |                                      | to: draw, shoot, or reload a firearm. If you    |
-  |                                      | have diehard you can use Wis instead of Con     |
-  |                                      | to determine death.                             |
-  |--------------------------------------+-------------------------------------------------|
+  |--------------------------------------+-----------------------------------------------|
+  | Name                                 | Description                                   |
+  |--------------------------------------+-----------------------------------------------|
+  | Magical Knack                        | +2 to sorcerer caster level up to hit die.    |
+  | Numerological gift (adopted Dhampir) | Once per day when an 8 is rolled              |
+  |                                      | you may treat it as a natural 20.             |
+  | Never stop shooting                  | May act as disabled at zero or lower but only |
+  |                                      | to: draw, shoot, or reload a firearm. If you  |
+  |                                      | have diehard you can use Wis instead of Con   |
+  |                                      | to determine death.                           |
+  |--------------------------------------+-----------------------------------------------|
 
 
   #+NAME:Class1Features
@@ -159,7 +159,7 @@
   |-------------------+--------------------------------------------------------------------------------------|
   | Name              | Description                                                                          |
   |-------------------+--------------------------------------------------------------------------------------|
-  | Spells            | Gets casting as a wizard. No cantrips, but can cast detect magic/ read magic as 1st. |
+  | Spells            | Gets casting as a wizard. No cantrips, but can cast detect magic/read magic as 1st.  |
   | Arcane Gun        | Can cast a spells that are ranged touch attacks, cones, lines, or rays through the   |
   |                   | gun. If they have an attack roll they get a x3 crit modifier. The spell gains        |
   |                   | the gun's enhancement bonus to either the attack roll or DC. On a natural 1 or       |
@@ -204,7 +204,7 @@
   #+NAME:HP
   |---+--------------+----|
   | # | Base         | 11 |
-  |   | Temporary HP |    |
+  |   | Temporary HP |  1 |
   |---+--------------+----|
   | # | Total        | 11 |
   |---+--------------+----|
@@ -214,9 +214,9 @@
   |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
   | ! | Type      | Total | Base | Armor | Shield | Dex | Size | Dodge | Natural | Deflect | Misc |
   |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
-  | # | AC        |    10 |   10 |     0 | 0      |   0 |    0 |       |       0 |       0 |      |
-  | # | Touch     |    10 |   10 |   N/A | N/A    |   0 |    0 |       |     N/A |       0 |      |
-  | # | Flat-foot |    10 |   10 |     0 | N/A    | N/A |    0 | N/A   |       0 |       0 |      |
+  | # | AC        |    14 |   10 |     2 | 0      |   2 |    0 |       |       0 |       0 |      |
+  | # | Touch     |    12 |   10 |   N/A | N/A    |   2 |    0 |       |     N/A |       0 |      |
+  | # | Flat-foot |    12 |   10 |     2 | N/A    | N/A |    0 | N/A   |       0 |       0 |      |
   |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
   #+TBLFM: @2$3..@>$3=vsum($4..$12);N::@2$5=remote(Armor, @2$AC)::@2$6=0::@2$7..@3$7=min(remote(Stats, @3$Modifier), remote(Armor, @>$6)::@2$8..@>$8=remote(Size, @2$1)::@4$5=remote(Armor, @2$AC)
 
@@ -285,14 +285,14 @@
   | # |  1 |    |     1 | Knowledge: Planes    | Int  | -      |       |      -2 |         |      |
   | # |  1 |    |     1 | Knowledge: Religion  | Int  | -      |       |      -2 |         |      |
   | # |  1 |    |     1 | Linguistics          | Int  | -      |       |      -2 |         |      |
-  | # |    |    |     1 | Perception           | Wis  | 8      |     1 |       4 |       3 |      |
+  | # |    |    |     1 | Perception           | Wis  | 10     |     1 |       4 |       3 |    2 |
   | # |    |    |       | Perform:             | Cha  | -2     |       |      -2 |         |      |
   | # |  1 |    |     1 | Profession:          | Wis  | -      |       |       4 |         |      |
   | # |    |  1 |     1 | Ride                 | Dex  | 2      |       |       2 |         |      |
   | # |    |    |       | Sense Motive         | Wis  | 4      |       |       4 |         |      |
   | # |  1 |  1 |     1 | Sleight of Hand      | Dex  | -      |       |       2 |         |      |
   | # |  1 |    |     1 | Spellcraft           | Int  | -      |       |      -2 |         |      |
-  | # |    |  1 |       | Stealth              | Dex  | 2      |       |       2 |         |      |
+  | # |    |  1 |       | Stealth              | Dex  | 4      |       |       2 |         |    2 |
   | # |    |    |     1 | Survival             | Wis  | 4      |       |       4 |         |      |
   | # |    |  1 |     1 | Swim                 | Str  | -3     |       |      -3 |         |      |
   | # |  1 |    |       | Use Magic Device     | Cha  | -      |       |      -2 |         |      |
@@ -318,12 +318,14 @@
    |   | Bedroll               |        1 |                5 |             5 |
    |   | Torch                 |        5 |                1 |             1 |
    |   | Soldier's Uniform     |        1 |                5 |             5 |
-   |   | Bullets               |          |                  |               |
-   |   | Black Powder          |          |                  |               |
-   |   | Paper Cartridge       |          |                  |               |
-   |   | Powder Horn           |          |                  |               |
+   | M | Bullets               |       25 |                  |               |
+   | M | Black Powder          |       25 |                  |               |
+   | M | Paper Cartridge       |       10 |                  |               |
+   | M | Powder Horn           |        3 |                1 |             1 |
+   | M | Waterskin             |        1 |                  |               |
+   | M | Rations               |          |                  |               |
    |---+-----------------------+----------+------------------+---------------|
-   | # | Total Weight:         |          |               34 |            34 |
+   | # | Total Weight:         |          |               35 |            35 |
    |---+-----------------------+----------+------------------+---------------|
    #+TBLFM: @>$4=vsum(@2$4..@-2$4)::@>$5=vsum(@2$5..@-2$5)
 
@@ -358,7 +360,7 @@
    #+NAME:Wealth
    |----------+-----|
    | Platinum |     |
-   | Gold     | 900 |
+   | Gold     | 220 |
    | Silver   |     |
    | Copper   |     |
    |----------+-----|
