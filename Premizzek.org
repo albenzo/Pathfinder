@@ -14,6 +14,7 @@
   - Deity :: None
   - Background Occupation :: Wizarding Student (drop-out)
   - Languages :: Common, Tengu
+  - Parent :: Rodolf (adopted)
 
   #+NAME:Size
   |------------|
@@ -49,37 +50,37 @@
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
   | ! |     HP | HD  | Class Name    | BAB | Skills | Fort | Ref | Will | Levels |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
-  |   |     10 | d10 | Gunslinger    |   1 |      4 |    2 |   2 |    0 |      1 |
+  |   |     11 | d10 | Gunslinger    |   1 |      4 |    2 |   2 |    0 |      1 |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
   |   | Totals |     | Favored Class |     |        |      |     |      |        |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
-  | # |     10 |     |               |   1 |      4 |    2 |   2 |    0 |      1 |
+  | # |     11 |     |               |   1 |      4 |    2 |   2 |    0 |      1 |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
   #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
 
   #+NAME:Class2
-  |---+--------+----+--------------+-----+--------+------+-----+------+--------|
-  | ! |     HP | HD | Class Name   | BAB | Skills | Fort | Ref | Will | Levels |
-  |---+--------+----+--------------+-----+--------+------+-----+------+--------|
-  |   |      6 | d6 | Spellslinger |   0 |      2 |    0 |   0 |    2 |      1 |
-  |---+--------+----+--------------+-----+--------+------+-----+------+--------|
-  |   | Totals |    |              |     |        |      |     |      |        |
-  |---+--------+----+--------------+-----+--------+------+-----+------+--------|
-  | # |      6 |    |              |   0 |      2 |    0 |   0 |    2 |      1 |
-  |---+--------+----+--------------+-----+--------+------+-----+------+--------|
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  | ! |     HP | HD | Class Name      | BAB | Skills | Fort | Ref | Will | Levels |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  |   |      6 | d6 | Empyereal Sorc. |   0 |      2 |    0 |   0 |    2 |      1 |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  |   | Totals |    |                 |     |        |      |     |      |        |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  | # |      6 |    |                 |   0 |      2 |    0 |   0 |    2 |      1 |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
   #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
 
   #+NAME:ClassGestalt
   |---+----+-----+------------+-----+--------+------+-----+------+--------|
   | ! | HP | HD  | Class Name | BAB | Skills | Fort | Ref | Will | Levels |
   |---+----+-----+------------+-----+--------+------+-----+------+--------|
-  | # | 11 | d10 | Gestalt    |   1 |      4 |    2 |   2 |    2 |      1 |
+  | # | 12 | d10 | Gestalt    |   1 |      4 |    2 |   2 |    2 |      1 |
   |---+----+-----+------------+-----+--------+------+-----+------+--------|
 
   #+NAME:Experience
-  |------------+---+---|
-  | Experience | 0 | ? |
-  |------------+---+---|
+  |------------+-----+------|
+  | Experience | 900 | 1300 |
+  |------------+-----+------|
 
   #+NAME:Proficiencies
   |------------+--------------------------------------+-------------|
@@ -88,6 +89,8 @@
   | Gunslinger | Simple, martial, two-handed firearms | Light armor |
   | Wizard     | Club, dagger, heavy/light crossbow   | None        |
   |            | quarterstaff, firearms               |             |
+  |            |                                      |             |
+  |            |                                      |             |
   |------------+--------------------------------------+-------------|
 
 
@@ -104,6 +107,7 @@
   |                       | (this makes the gun masterwork).                                           |
   | Rapid Reload (musket) | Reduce reload time 1 level. Fullround -> standard -> move -> free          |
   | Precise shot          | +1 to attack and damage with ranged weapons when within 30ft.              |
+  | Eschew Materials      | Can ignore material components up to 1gp                                   |
   |-----------------------+----------------------------------------------------------------------------|
 
   #+NAME:RacialFeatures
@@ -156,25 +160,26 @@
   |----------------+------------------------------------------------------------------------|
 
   #+NAME:Class2Features
-  |-------------------+--------------------------------------------------------------------------------------|
-  | Name              | Description                                                                          |
-  |-------------------+--------------------------------------------------------------------------------------|
-  | Spells            | Gets casting as a wizard. No cantrips, but can cast detect magic/read magic as 1st.  |
-  | Arcane Gun        | Can cast a spells that are ranged touch attacks, cones, lines, or rays through the   |
-  |                   | gun. If they have an attack roll they get a x3 crit modifier. The spell gains        |
-  |                   | the gun's enhancement bonus to either the attack roll or DC. On a natural 1 or       |
-  |                   | if the target rolls a 20 on the save the gun gains the broken condition or           |
-  |                   | explodes if it already was broken. The damage for this blast is has the energy       |
-  |                   | type of the spell and deals 1d6 per caster level. DC is the same as the spell used.  |
-  |                   | You can only attune a single arcane gun at a time.                                   |
-  | Mage Bullets      | As a swift action you can sacrifice a spell to add an enhancement bonus up to +5     |
-  |                   | and dancing, defending, distance, flaming, flaming burst, frost, ghost touch,        |
-  |                   | icy burst, merciful, seeking, shock, shocking burst, spell storing, thundering,      |
-  |                   | vicious, and wounding as the level of the spell. This lasts a number of minutes      |
-  |                   | equal to the spell level or until used again.                                        |
-  | School of the gun | Choose four opposition schools. Enchantment, abjuration, conjuration, necromancy     |
-  |                   |                                                                                      |
-  |-------------------+--------------------------------------------------------------------------------------|
+  |--------------------+-------------------------------------------------------------------------------------|
+  | Name               | Description                                                                         |
+  |--------------------+-------------------------------------------------------------------------------------|
+  | Spells             | Gets casting as a wizard. No cantrips, but can cast detect magic/read magic as 1st. |
+  | Arcane Gun         | Can cast a spells that are ranged touch attacks, cones, lines, or rays through the  |
+  |                    | gun. If they have an attack roll they get a x3 crit modifier. The spell gains       |
+  |                    | the gun's enhancement bonus to either the attack roll or DC. On a natural 1 or      |
+  |                    | if the target rolls a 20 on the save the gun gains the broken condition or          |
+  |                    | explodes if it already was broken. The damage for this blast is has the energy      |
+  |                    | type of the spell and deals 1d6 per caster level. DC is the same as the spell used. |
+  |                    | You can only attune a single arcane gun at a time.                                  |
+  | Mage Bullets       | As a swift action you can sacrifice a spell to add an enhancement bonus up to +5    |
+  |                    | and dancing, defending, distance, flaming, flaming burst, frost, ghost touch,       |
+  |                    | icy burst, merciful, seeking, shock, shocking burst, spell storing, thundering,     |
+  |                    | vicious, and wounding as the level of the spell. This lasts a number of minutes     |
+  |                    | equal to the spell level or until used again.                                       |
+  | School of the gun  | Choose four opposition schools. Enchantment, abjuration, conjuration, necromancy    |
+  | Heavenly Fire (Su) | 30ft ranged touch attack ray that deals 1d4+(1 per 2 sorc levels) damage to evil    |
+  |                    | healing to good. Can only affect with healing once per day used 3+wisdom per day.   |
+  |--------------------+-------------------------------------------------------------------------------------|
 
   #+NAME:GunProperties
   |-------------------+----------------------------------------------------------------|
@@ -203,10 +208,10 @@
 
   #+NAME:HP
   |---+--------------+----|
-  | # | Base         | 11 |
-  |   | Temporary HP |  1 |
+  | # | Base         | 12 |
+  |   | Temporary HP |    |
   |---+--------------+----|
-  | # | Total        | 11 |
+  | # | Total        | 12 |
   |---+--------------+----|
   #+TBLFM: @1$3=remote(ClassGestalt, @2$HP)::@3$3=@1$3+@2$3
 
@@ -272,7 +277,7 @@
   | # |    |  1 |       | Escape Artist        | Dex  | 2      |       |       2 |         |      |
   | # |    |  1 |     1 | Fly                  | Dex  | 6      |     1 |       2 |       3 |      |
   | # |  1 |    |     1 | Handle Animal        | Cha  | -      |       |      -2 |         |      |
-  | # |    |    |     1 | Heal                 | Wis  | 4      |       |       4 |         |      |
+  | # |    |    |     1 | Heal                 | Wis  | 6      |       |       4 |         |    2 |
   | # |    |    |     1 | Intimidate           | Cha  | -2     |       |      -2 |         |      |
   | # |  1 |    |     1 | Knowledge: Arcana    | Int  | -      |       |      -2 |         |      |
   | # |  1 |    |     1 | Knowledge: Dungeon   | Int  | -      |       |      -2 |         |      |
@@ -283,7 +288,7 @@
   | # |  1 |    |     1 | Knowledge: Nature    | Int  | -      |       |      -2 |         |      |
   | # |  1 |    |     1 | Knowledge: Nobility  | Int  | -      |       |      -2 |         |      |
   | # |  1 |    |     1 | Knowledge: Planes    | Int  | -      |       |      -2 |         |      |
-  | # |  1 |    |     1 | Knowledge: Religion  | Int  | -      |       |      -2 |         |      |
+  | # |  1 |    |     1 | Knowledge: Religion  | Int  | -      |       |      -2 |         |    2 |
   | # |  1 |    |     1 | Linguistics          | Int  | -      |       |      -2 |         |      |
   | # |    |    |     1 | Perception           | Wis  | 10     |     1 |       4 |       3 |    2 |
   | # |    |    |       | Perform:             | Cha  | -2     |       |      -2 |         |      |
@@ -318,12 +323,12 @@
    |   | Bedroll               |        1 |                5 |             5 |
    |   | Torch                 |        5 |                1 |             1 |
    |   | Soldier's Uniform     |        1 |                5 |             5 |
-   | M | Bullets               |       25 |                  |               |
-   | M | Black Powder          |       25 |                  |               |
-   | M | Paper Cartridge       |       10 |                  |               |
-   | M | Powder Horn           |        3 |                1 |             1 |
-   | M | Waterskin             |        1 |                  |               |
-   | M | Rations               |          |                  |               |
+   |   | Bullets               |       23 |                  |               |
+   |   | Black Powder          |       23 |                  |               |
+   |   | Paper Cartridge       |       10 |                  |               |
+   |   | Powder Horn           |        3 |                1 |             1 |
+   |   | Silk Rope             |     50ft |                5 |             5 |
+   |   | Cure Mod Pot.         |        1 |                  |               |
    |---+-----------------------+----------+------------------+---------------|
    | # | Total Weight:         |          |               35 |            35 |
    |---+-----------------------+----------+------------------+---------------|
@@ -358,12 +363,12 @@
 
 ** Wealth
    #+NAME:Wealth
-   |----------+-----|
-   | Platinum |     |
-   | Gold     | 220 |
-   | Silver   |     |
-   | Copper   |     |
-   |----------+-----|
+   |----------+-------|
+   | Platinum |       |
+   | Gold     | 45.25 |
+   | Silver   |       |
+   | Copper   |       |
+   |----------+-------|
 
 ** Bags and Containers
    #+NAME:Bags
@@ -372,3 +377,63 @@
    |-----------+--------+--------|
    | Backpack  | 2ft^3  |      2 |
    |-----------+--------+--------|
+* Spells
+  #+NAME:CastingStat
+  |---+--------------+-----+---|
+  | # | Casting Stat | Wis | 4 |
+  |---+--------------+-----+---|
+  #+TBLFM:@1$4='(cond ((string= $3 "Int") remote(Stats, @5$Modifier)) ((string= $3 "Wis") remote(Stats, @6$Modifier)) ((string= $3 "Cha") remote(Stats, @7$Modifier)))
+
+  #+NAME:SpellInfo
+  |---+---------+-------------+-------+-------------+---------+------+-------------|
+  | ! | Save DC | Spell Level | Total | Class Bonus | Ability | Misc | Total Known |
+  |---+---------+-------------+-------+-------------+---------+------+-------------|
+  | # |         |           0 |     0 |           0 |         |      |           4 |
+  | # |      15 |           1 |     4 |           3 |       1 |      |           2 |
+  | # |      16 |           2 |     5 |           4 |       1 |      |             |
+  | # |      17 |           3 |     4 |           3 |       1 |      |             |
+  | # |      18 |           4 |     4 |           3 |       1 |      |             |
+  | # |      19 |           5 |     4 |           4 |       0 |      |             |
+  | # |      27 |           6 |     5 |           3 |       0 |      |             |
+  | # |      28 |           7 |     4 |           2 |       0 |      |             |
+  | # |      29 |           8 |     2 |           1 |       0 |      |             |
+  | # |      30 |           9 |     1 |             |       0 |      |             |
+  |---+---------+-------------+-------+-------------+---------+------+-------------|
+  #+TBLFM: $4=vsum($5..$7)::$2=if($4 > 0, 10+$3+remote(CastingStat, @1$4), string(""))::@3$6..@>$6=max(0, (remote(CastingStat, @1$4)-$3)\4+1)
+  # 
+
+  #+NAME:CasterLevel
+  |--------------+---|
+  | Caster Level | 1 |
+  |--------------+---|
+
+  #+NAME:Concentration
+  |---+---------------+-------+------+---------+------|
+  | ! |               | Total | Base | Ability | Misc |
+  |---+---------------+-------+------+---------+------|
+  | # | Concentration |     5 |    1 |       4 |      |
+  |---+---------------+-------+------+---------+------|
+  #+TBLFM: @2$3=vsum($4..$6)::@2$4=remote(CasterLevel, @1$2)::@2$5=remote(CastingStat, @1$4)
+
+  #+NAME:SpellRanges
+  |---+--------+------|
+  | # | Close  | 27.5 |
+  | # | Medium |  110 |
+  | # | Long   |  440 |
+  |---+--------+------|
+  #+TBLFM: @1$3=25+remote(CasterLevel,@1$2)*5/2::@2$3=100+remote(CasterLevel, @1$2)*10::@3$3=400+remote(CasterLevel, @1$2)*40
+
+  # See DahliaSpellBook.org
+  #+NAME:Spells
+  |------------+-------+---------------------+-------------+---------|
+  | # Prepared | Level | Name                | Description | Save DC |
+  |------------+-------+---------------------+-------------+---------|
+  |            |     0 | Detect Magic        |             |      14 |
+  |            |     0 | Dancing Lights      |             |      14 |
+  |            |     0 | Prestidigitation    |             |      14 |
+  |            |     0 | mage hand           |             |      14 |
+  |            |     1 | Reduce Person       |             |      15 |
+  |            |     1 | Abundant Ammunition |             |      15 |
+  |            |     1 | Burning Hands       |             |      15 |
+  |            |     1 | Snowball            |             |      15 |
+  |------------+-------+---------------------+-------------+---------|
