@@ -28,7 +28,7 @@
   |---+--------------+-------+----------+------+----------+---------+------|
   | ! | Stat         | Total | Modifier | Base | Inherent | Enhance | Misc |
   |---+--------------+-------+----------+------+----------+---------+------|
-  | # | Strength     |     5 |       -3 |    5 |          |         |      |
+  | # | Strength     |     3 |       -4 |    5 |          |         |   -2 |
   | # | Dexterity    |    14 |        2 |   14 |          |         |      |
   | # | Constitution |    12 |        1 |   12 |          |         |      |
   | # | Intelligence |     7 |       -2 |    7 |          |         |      |
@@ -51,10 +51,11 @@
   | ! |     HP | HD  | Class Name    | BAB | Skills | Fort | Ref | Will | Levels |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
   |   |     11 | d10 | Gunslinger    |   1 |      4 |    2 |   2 |    0 |      1 |
+  |   |      8 | d10 | Fighter       |   1 |      2 |    2 |   0 |    2 |      1 |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
   |   | Totals |     | Favored Class |     |        |      |     |      |        |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
-  | # |     11 |     |               |   1 |      4 |    2 |   2 |    0 |      1 |
+  | # |     19 |     |               |   2 |      6 |    4 |   2 |    2 |      2 |
   |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
   #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
 
@@ -62,11 +63,12 @@
   |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
   | ! |     HP | HD | Class Name      | BAB | Skills | Fort | Ref | Will | Levels |
   |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
-  |   |      6 | d6 | Empyereal Sorc. |   0 |      2 |    0 |   0 |    2 |      1 |
+  |   |      7 | d6 | Empyereal Sorc. |   0 |      2 |    0 |   0 |    2 |      1 |
+  |   |      2 | d6 | Gunslinger      |   0 |      2 |    0 |   0 |    2 |      1 |
   |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
   |   | Totals |    |                 |     |        |      |     |      |        |
   |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
-  | # |      6 |    |                 |   0 |      2 |    0 |   0 |    2 |      1 |
+  | # |      9 |    |                 |   0 |      4 |    0 |   0 |    4 |      2 |
   |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
   #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
 
@@ -74,7 +76,7 @@
   |---+----+-----+------------+-----+--------+------+-----+------+--------|
   | ! | HP | HD  | Class Name | BAB | Skills | Fort | Ref | Will | Levels |
   |---+----+-----+------------+-----+--------+------+-----+------+--------|
-  | # | 12 | d10 | Gestalt    |   1 |      4 |    2 |   2 |    2 |      1 |
+  | # | 19 | d10 | Gestalt    |   2 |      4 |    6 |   4 |    4 |      2 |
   |---+----+-----+------------+-----+--------+------+-----+------+--------|
 
   #+NAME:Experience
@@ -83,15 +85,15 @@
   |------------+-----+------|
 
   #+NAME:Proficiencies
-  |------------+--------------------------------------+-------------|
-  | Class      | Weapons                              | Armors      |
-  |------------+--------------------------------------+-------------|
-  | Gunslinger | Simple, martial, two-handed firearms | Light armor |
-  | Wizard     | Club, dagger, heavy/light crossbow   | None        |
-  |            | quarterstaff, firearms               |             |
-  |            |                                      |             |
-  |            |                                      |             |
-  |------------+--------------------------------------+-------------|
+  |-------------+--------------------------------------+-------------|
+  | Class       | Weapons                              | Armors      |
+  |-------------+--------------------------------------+-------------|
+  | Gunslinger  | Simple, martial, two-handed firearms | Light armor |
+  | Wizard/Sorc | Club, dagger, heavy/light crossbow   | None        |
+  |             | quarterstaff, firearms               |             |
+  | Fighter     | Simple, martial                      | All         |
+  |             |                                      |             |
+  |-------------+--------------------------------------+-------------|
 
 
   #+NAME:Feats
@@ -108,6 +110,7 @@
   | Rapid Reload (musket) | Reduce reload time 1 level. Fullround -> standard -> move -> free          |
   | Precise shot          | +1 to attack and damage with ranged weapons when within 30ft.              |
   | Eschew Materials      | Can ignore material components up to 1gp                                   |
+  | Precise Shot          | Ignore the -4 for shooting into combat                                     |
   |-----------------------+----------------------------------------------------------------------------|
 
   #+NAME:RacialFeatures
@@ -176,7 +179,7 @@
   |                    | icy burst, merciful, seeking, shock, shocking burst, spell storing, thundering,     |
   |                    | vicious, and wounding as the level of the spell. This lasts a number of minutes     |
   |                    | equal to the spell level or until used again.                                       |
-  | School of the gun  | Choose four opposition schools. Enchantment, abjuration, conjuration, necromancy    |
+  | School of the gun  | Choose four opposition schools. abjuration, divination, evocation, transmutation    |
   | Heavenly Fire (Su) | 30ft ranged touch attack ray that deals 1d4+(1 per 2 sorc levels) damage to evil    |
   |                    | healing to good. Can only affect with healing once per day used 3+wisdom per day.   |
   |--------------------+-------------------------------------------------------------------------------------|
@@ -200,18 +203,18 @@
   |---+---------------+-------+------+---------+---------+------|
   | ! | Saving Throws | Total | Base | Ability | Enhance | Misc |
   |---+---------------+-------+------+---------+---------+------|
-  | # | Fortitude     |     3 |    2 |       1 |         |      |
-  | # | Reflex        |     4 |    2 |       2 |         |      |
-  | # | Will          |     6 |    2 |       4 |         |      |
+  | # | Fortitude     |     7 |    6 |       1 |         |      |
+  | # | Reflex        |     6 |    4 |       2 |         |      |
+  | # | Will          |     8 |    4 |       4 |         |      |
   |---+---------------+-------+------+---------+---------+------|
   #+TBLFM: $5=remote(Stats,@3$Modifier)::@2$3..@4$3=vsum($4..$7)::@2$4=remote(ClassGestalt, @>$Fort)::@2$5=remote(Stats, @4$Modifier)::@3$4=remote(ClassGestalt, @>$Ref)::@4$4=remote(ClassGestalt, @>$Will)::@4$5=remote(Stats, @6$Modifier)
 
   #+NAME:HP
   |---+--------------+----|
-  | # | Base         | 12 |
-  |   | Temporary HP |    |
+  | # | Base         | 19 |
+  |   | Temporary HP | 15 |
   |---+--------------+----|
-  | # | Total        | 12 |
+  | # | Total        | 19 |
   |---+--------------+----|
   #+TBLFM: @1$3=remote(ClassGestalt, @2$HP)::@3$3=@1$3+@2$3
 
@@ -229,7 +232,7 @@
   |---+-----+-------+------+-----+-----+-----+------+------|
   | ! |     | Total | Base | BAB | Dex | Str | Size | Misc |
   |---+-----+-------+------+-----+-----+-----+------+------|
-  | # | CMD |    13 |   10 |   1 |   2 |  -3 |    0 |    3 |
+  | # | CMD |    14 |   10 |   2 |   2 |  -3 |    0 |    3 |
   |---+-----+-------+------+-----+-----+-----+------+------|
   #+TBLFM: @2$3=vsum($4..$9)::@2$5=remote(ClassGestalt, @>$BAB)::@2$6=remote(Stats, @3$Modifier)::@2$7=remote(Stats, @2$Modifier)::@2$8=remote(Size, @2$1)
 
@@ -244,9 +247,9 @@
   |---+--------+-------+-------------------+---------+------+------|
   | ! |        | Total | Base Attack Bonus | Ability | Size | Misc |
   |---+--------+-------+-------------------+---------+------+------|
-  | # | Melee  |    -2 |                 1 |      -3 |    0 |      |
-  | # | Ranged |     3 |                 1 |       2 |    0 |      |
-  | # | CMB    |    -2 |                 1 |      -3 |    0 |      |
+  | # | Melee  |    -1 |                 2 |      -3 |    0 |      |
+  | # | Ranged |     4 |                 2 |       2 |    0 |      |
+  | # | CMB    |    -1 |                 2 |      -3 |    0 |      |
   |---+--------+-------+-------------------+---------+------+------|
   #+TBLFM: @2$3..@4$3=vsum($4..$7)::@2$4..@4$4=remote(ClassGestalt, @>$BAB)::@2$5=remote(Stats, @2$Modifier)::@2$6=remote(Size, @2$1)::@3$5=remote(Stats, @3$Modifier)::@3$6=remote(Size, @2$1)::@4$5=remote(Stats, @2$Modifier)::@4$6=remote(Size, @2$1)
 
@@ -266,7 +269,7 @@
   |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
   | ! | TR | AP | Class | Skill                | Stat | Total  | Ranks | Ability | Trained | Misc |
   |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
-  | # |    |  1 |     1 | Acrobatics           | Dex  | 2      |       |       2 |         |      |
+  | # |    |  1 |     1 | Acrobatics           | Dex  | 6      |     1 |       2 |       3 |      |
   | # |    |    |     1 | Appraise             | Int  | -2     |       |      -2 |         |      |
   | # |    |    |     1 | Bluff                | Cha  | -2     |       |      -2 |         |      |
   | # |    |  1 |     1 | Climb                | Str  | -3     |       |      -3 |         |      |
@@ -302,7 +305,7 @@
   | # |    |  1 |     1 | Swim                 | Str  | -3     |       |      -3 |         |      |
   | # |  1 |    |       | Use Magic Device     | Cha  | -      |       |      -2 |         |      |
   |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
-  | # |    |    |       |                      |      | Total: |     3 |         |         |      |
+  | # |    |    |       |                      |      | Total: |     4 |         |         |      |
   |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
   #+TBLFM:@2$7..@-1$7=if(($2 > 0 && $8 > 0) || ($2 == 0), vsum($8..$11)+($3*remote(Armor, @>$Penalty)), string("-"))::@2$9..@-1$9='(cond ((string= $6 "Str") remote(Stats, @2$Modifier)) ((string= $6 "Dex") remote(Stats, @3$Modifier)) ((string= $6 "Int") remote(Stats, @5$Modifier)) ((string= $6 "Wis") remote(Stats, @6$Modifier)) ((string= $6 "Cha") remote(Stats, @7$Modifier)))::@2$10..@-1$10=if($4 > 0 && $8 > 0, 3, string(""))::@>$8=vsum(@2$8..@-1$8)
 
@@ -323,8 +326,8 @@
    |   | Bedroll               |        1 |                5 |             5 |
    |   | Torch                 |        5 |                1 |             1 |
    |   | Soldier's Uniform     |        1 |                5 |             5 |
-   |   | Bullets               |       23 |                  |               |
-   |   | Black Powder          |       23 |                  |               |
+   |   | Bullets               |       30 |                  |               |
+   |   | Black Powder          |       30 |                  |               |
    |   | Paper Cartridge       |       10 |                  |               |
    |   | Powder Horn           |        3 |                1 |             1 |
    |   | Silk Rope             |     50ft |                5 |             5 |
@@ -363,12 +366,12 @@
 
 ** Wealth
    #+NAME:Wealth
-   |----------+-------|
-   | Platinum |       |
-   | Gold     | 45.25 |
-   | Silver   |       |
-   | Copper   |       |
-   |----------+-------|
+   |----------+--------|
+   | Platinum |        |
+   | Gold     | 174.25 |
+   | Silver   |        |
+   | Copper   |        |
+   |----------+--------|
 
 ** Bags and Containers
    #+NAME:Bags
@@ -394,37 +397,36 @@
   | # |      17 |           3 |     4 |           3 |       1 |      |             |
   | # |      18 |           4 |     4 |           3 |       1 |      |             |
   | # |      19 |           5 |     4 |           4 |       0 |      |             |
-  | # |      27 |           6 |     5 |           3 |       0 |      |             |
-  | # |      28 |           7 |     4 |           2 |       0 |      |             |
-  | # |      29 |           8 |     2 |           1 |       0 |      |             |
-  | # |      30 |           9 |     1 |             |       0 |      |             |
+  | # |      20 |           6 |     3 |           3 |       0 |      |             |
+  | # |      21 |           7 |     2 |           2 |       0 |      |             |
+  | # |      22 |           8 |     1 |           1 |       0 |      |             |
+  | # |      23 |           9 |     0 |             |       0 |      |             |
   |---+---------+-------------+-------+-------------+---------+------+-------------|
   #+TBLFM: $4=vsum($5..$7)::$2=if($4 > 0, 10+$3+remote(CastingStat, @1$4), string(""))::@3$6..@>$6=max(0, (remote(CastingStat, @1$4)-$3)\4+1)
   # 
 
   #+NAME:CasterLevel
   |--------------+---|
-  | Caster Level | 1 |
+  | Caster Level | 2 |
   |--------------+---|
 
   #+NAME:Concentration
   |---+---------------+-------+------+---------+------|
   | ! |               | Total | Base | Ability | Misc |
   |---+---------------+-------+------+---------+------|
-  | # | Concentration |     5 |    1 |       4 |      |
+  | # | Concentration |     6 |    2 |       4 |      |
   |---+---------------+-------+------+---------+------|
   #+TBLFM: @2$3=vsum($4..$6)::@2$4=remote(CasterLevel, @1$2)::@2$5=remote(CastingStat, @1$4)
 
   #+NAME:SpellRanges
-  |---+--------+------|
-  | # | Close  | 27.5 |
-  | # | Medium |  110 |
-  | # | Long   |  440 |
-  |---+--------+------|
+  |---+--------+-----|
+  | # | Close  |  30 |
+  | # | Medium | 120 |
+  | # | Long   | 480 |
+  |---+--------+-----|
   #+TBLFM: @1$3=25+remote(CasterLevel,@1$2)*5/2::@2$3=100+remote(CasterLevel, @1$2)*10::@3$3=400+remote(CasterLevel, @1$2)*40
 
-  # See DahliaSpellBook.org
-  #+NAME:Spells
+  #+NAME:SorcSpells
   |------------+-------+---------------------+-------------+---------|
   | # Prepared | Level | Name                | Description | Save DC |
   |------------+-------+---------------------+-------------+---------|
@@ -437,3 +439,32 @@
   |            |     1 | Burning Hands       |             |      15 |
   |            |     1 | Snowball            |             |      15 |
   |------------+-------+---------------------+-------------+---------|
+
+  #+NAME:WizSpells
+  |------------+-------+--------------------+-------------+---------|
+  | # Prepared | Level | Name               | Description | Save DC |
+  |------------+-------+--------------------+-------------+---------|
+  |            |     0 | Acid splash        |             |       8 |
+  |            |     0 | Drench             |             |       8 |
+  |            |     0 | Daze               |             |       8 |
+  |            |     0 | Ghost Sound        |             |       8 |
+  |            |     0 | Haunted Fey Aspect |             |       8 |
+  |            |     0 | Bleed              |             |       8 |
+  |            |     0 | Disrupt Undead     |             |       8 |
+  |            |     0 | Touch of Fatigue   |             |       8 |
+  |            |     0 | Jolt               |             |       8 |
+  |            |     0 | Mage hand          |             |       8 |
+  |            |     0 | Mending            |             |       8 |
+  |            |     0 | Message            |             |       8 |
+  |            |     0 | Open/Close         |             |       8 |
+  |            |     0 | Root               |             |       8 |
+  |            |     0 | Scrivener's Chant  |             |       8 |
+  |            |     0 | Prestidigitation   |             |       8 |
+  |            |     0 | Arcane Mark        |             |       8 |
+  |            |     1 | Read Magic         |             |       9 |
+  |------------+-------+--------------------+-------------+---------|
+
+* Transients
++1 8 rounds
+abundant ammunition 14 rounds
+2 grit
