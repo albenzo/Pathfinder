@@ -212,7 +212,7 @@
   #+NAME:HP
   |---+--------------+----|
   | # | Base         | 19 |
-  |   | Temporary HP | 15 |
+  |   | Temporary HP | 13 |
   |---+--------------+----|
   | # | Total        | 19 |
   |---+--------------+----|
@@ -326,9 +326,9 @@
    |   | Bedroll               |        1 |                5 |             5 |
    |   | Torch                 |        5 |                1 |             1 |
    |   | Soldier's Uniform     |        1 |                5 |             5 |
-   |   | Bullets               |       30 |                  |               |
-   |   | Black Powder          |       30 |                  |               |
-   |   | Paper Cartridge       |       10 |                  |               |
+   |   | Bullets               |       28 |                  |               |
+   |   | Black Powder          |       28 |                  |               |
+   |   | Paper Cartridge       |        8 |                  |               |
    |   | Powder Horn           |        3 |                1 |             1 |
    |   | Silk Rope             |     50ft |                5 |             5 |
    |   | Cure Mod Pot.         |        1 |                  |               |
@@ -339,20 +339,20 @@
 
    # Worn magic items
    #+NAME:WornEquipment
-   |-----------+---|
-   | Head      |   |
-   | Face      |   |
-   | Throat    |   |
-   | Shoulders |   |
-   | Body      |   |
-   | Torso     |   |
-   | Arms      |   |
-   | Hands     |   |
-   | Ring      |   |
-   | Ring      |   |
-   | Waist     |   |
-   | Feet      |   |
-   |-----------+---|
+   |-----------+----------------------|
+   | Head      |                      |
+   | Face      |                      |
+   | Throat    |                      |
+   | Shoulders |                      |
+   | Body      |                      |
+   | Torso     |                      |
+   | Arms      |                      |
+   | Hands     |                      |
+   | Ring      |                      |
+   | Ring      |                      |
+   | Waist     | Beneficial Bandolier |
+   | Feet      |                      |
+   |-----------+----------------------|
 
    #+NAME:Armor
    |---+---------+------------------+---------+----+---------+---------+----------------+-------+------+----------|
@@ -368,7 +368,7 @@
    #+NAME:Wealth
    |----------+--------|
    | Platinum |        |
-   | Gold     | 174.25 |
+   | Gold     | 287.25 |
    | Silver   |        |
    | Copper   |        |
    |----------+--------|
@@ -465,6 +465,16 @@
   |------------+-------+--------------------+-------------+---------|
 
 * Transients
-+1 8 rounds
-abundant ammunition 14 rounds
-2 grit
+1 grit
+** Loot
+Silversheen
+Transport token
+Masterwork bastard sword
+Other treasure (Gorloth)
+magic belt
+cure moderate wounds potion
+2x cure light wounds potion
+scroll of inflict light wounds
+hand of the mage
+bone dice
+42 copper pieces
