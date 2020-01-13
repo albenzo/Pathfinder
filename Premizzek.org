@@ -30,10 +30,10 @@
   |---+--------------+-------+----------+------+----------+---------+------|
   | # | Strength     |     5 |       -3 |    5 |          |         |      |
   | # | Dexterity    |    14 |        2 |   14 |          |         |      |
-  | # | Constitution |    11 |        0 |   12 |          |         |   -1 |
+  | # | Constitution |    12 |        1 |   12 |          |         |      |
   | # | Intelligence |     7 |       -2 |    7 |          |         |      |
   | # | Wisdom       |    19 |        4 |   19 |          |         |      |
-  | # | Charisma     |     7 |       -2 |    7 |          |         |      |
+  | x# | Charisma     |     7 |       -2 |    7 |          |         |      |
   |---+--------------+-------+----------+------+----------+---------+------|
   #+TBLFM: $3=vsum($5..$8)::$4=floor(($3 - 10) / 2)
 
@@ -214,7 +214,7 @@
   #+NAME:HP
   |---+--------------+----|
   | # | Base         | 26 |
-  |   | Temporary HP | 15 |
+  |   | Temporary HP | 26 |
   |---+--------------+----|
   | # | Total        | 26 |
   |---+--------------+----|
@@ -370,7 +370,7 @@
    #+NAME:Wealth
    |----------+--------|
    | Platinum |        |
-   | Gold     | 280.92 |
+   | Gold     | 310.92 |
    | Silver   |        |
    | Copper   |        |
    |----------+--------|
@@ -451,9 +451,9 @@
   |------------+-------+--------------+-------------+---------|
 
 * Transients
-4 grit
-21 rounds abundant ammunition
-6 +1 attack/damage
+4/4 grit
+13 rounds abundant ammunition
+0 +1 attack/damage
 ** Loot
 Silversheen
 Transport token
