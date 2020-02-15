@@ -1,0 +1,436 @@
+# -*- org-emphasis-alist: nil -*-
+
+#+TITLE: Pathfinder Character Sheet
+#+AUTHOR: Lucas Meyers (Adapted from Jesus Ramos)
+
+* Basic Character Info
+  - Name :: Rodolf Preval
+  - Race :: Dhampir (Vetala)
+  - Gender :: Male
+  - Height :: 6'2''
+  - Weight :: 190
+  - Age :: 43
+  - Alignment :: Lawful Neutral
+  - Deity :: None
+  - Background Occupation :: Wanderer
+  - Languages :: Common, necril, tengu, aklo, sylvan
+
+  #+NAME:Size
+  |------------|
+  | Size Bonus |
+  |------------|
+  |          0 |
+  |------------|
+
+* Character Stats
+  #+NAME:Stats
+  |---+--------------+-------+----------+------+----------+---------+------|
+  | ! | Stat         | Total | Modifier | Base | Inherent | Enhance | Misc |
+  |---+--------------+-------+----------+------+----------+---------+------|
+  | # | Strength     |     5 |       -3 |    7 |          |         |   -2 |
+  | # | Dexterity    |    24 |        7 |   18 |          |         |    6 |
+  | # | Constitution |    14 |        2 |   14 |          |         |      |
+  | # | Intelligence |    18 |        4 |   18 |          |         |      |
+  | # | Wisdom       |    16 |        3 |   16 |          |         |      |
+  | # | Charisma     |     7 |       -2 |    7 |          |         |      |
+  |---+--------------+-------+----------+------+----------+---------+------|
+  #+TBLFM: $3=vsum($5..$8)::$4=floor(($3 - 10) / 2)
+
+  #+NAME:Initiative
+  |---+------------+-------+------+------|
+  | ! |            | Total | Base | Misc |
+  |---+------------+-------+------+------|
+  | # | Initiative |     4 |    4 |      |
+  |---+------------+-------+------+------|
+  #+TBLFM: @2$3=vsum(@2$4..@2$5)::@2$4=remote(Stats, @3$Modifier)
+
+* Class
+  #+NAME:Class1
+  |---+--------+----+--------------------+-----+--------+------+-----+------+--------|
+  | ! |     HP | HD | Class Name         | BAB | Skills | Fort | Ref | Will | Levels |
+  |---+--------+----+--------------------+-----+--------+------+-----+------+--------|
+  |   |        | d6 | White-haired Witch |   2 |      2 |    1 |   1 |    4 |      4 |
+  |---+--------+----+--------------------+-----+--------+------+-----+------+--------|
+  |   | Totals |    | Favored Class      |     |        |      |     |      |        |
+  |---+--------+----+--------------------+-----+--------+------+-----+------+--------|
+  | # |      8 |    |                    |   2 |      2 |    1 |   1 |    4 |      4 |
+  |---+--------+----+--------------------+-----+--------+------+-----+------+--------|
+  #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
+
+  #+NAME:Class2
+  |---+--------+----+-------------------+-----+--------+------+-----+------+--------|
+  | ! | HP     | HD | Class Name        | BAB | Skills | Fort | Ref | Will | Levels |
+  |---+--------+----+-------------------+-----+--------+------+-----+------+--------|
+  |   |        | d8 | Hungry Ghost Monk |   3 |      4 |    4 |   4 |    4 |      4 |
+  |---+--------+----+-------------------+-----+--------+------+-----+------+--------|
+  |   | Totals |    |                   |     |        |      |     |      |        |
+  |---+--------+----+-------------------+-----+--------+------+-----+------+--------|
+  | # | 0      |    |                   |   3 |      4 |    4 |   4 |    4 |      4 |
+  |---+--------+----+-------------------+-----+--------+------+-----+------+--------|
+  #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
+
+  #+NAME:ClassGestalt
+  |---+----+----+------------+-----+--------+------+-----+------+--------|
+  | ! | HP | HD | Class Name | BAB | Skills | Fort | Ref | Will | Levels |
+  |---+----+----+------------+-----+--------+------+-----+------+--------|
+  | # | 32 | d8 | Gestalt    |   3 |      4 |    4 |   4 |    4 |      4 |
+  |---+----+----+------------+-----+--------+------+-----+------+--------|
+
+  #+NAME:Experience
+  |------------+-----+------|
+  | Experience | 900 | 1300 |
+  |------------+-----+------|
+
+  #+NAME:Proficiencies
+  |-------+---------------------------------------------------------------------------+--------|
+  | Class | Weapons                                                                   | Armors |
+  |-------+---------------------------------------------------------------------------+--------|
+  | Monk  | Brass knuckles, cestus, club, crossbow, dagger, handaxe, javelin, kama,   |        |
+  |       | nunchaku, quarterstaff, sai, shortspear, short sword, shuriken, siangham, |        |
+  |       | sling, spear, shortsword                                                  |        |
+  | Witch | Simple weapons                                                            |        |
+  |-------+---------------------------------------------------------------------------+--------|
+
+
+  #+NAME:Feats
+  |-----------------------+-------------------------------------------------|
+  | Name                  | Description                                     |
+  |-----------------------+-------------------------------------------------|
+  | Improved Grapple      | +2 to grapple, +2 against, don't provoke        |
+  | Combat Reflexes       | AOOs up to dex mod +1 and while flat-footed     |
+  | Weapon Focus (Hair)   | +1 to attack rolls with hair                    |
+  | Feral Combat Training | Can flurry with hair and apply feats with       |
+  |                       | imporoved unarm strike as a prereq              |
+  | Punishing kick        | Can push or knock prone as part of attack roll  |
+  |                       | Knock prone gives fort save dc 10+wis+1/2 level |
+  |                       | Can be used 1/lvl per day.                      |
+  | Psychic Sensativity   | Can activate chakras and obtain psychic skill   |
+  |                       | unlocks. Psychic skill unlocks can only be      |
+  |                       | used once a day or week. Only next to crab.     |
+  |-----------------------+-------------------------------------------------|
+
+  #+NAME:RacialFeatures
+  |--------------------------+-----------------------------------------------------------|
+  | Name                     | Description                                               |
+  |--------------------------+-----------------------------------------------------------|
+  | Weakness                 | -1 caster levelin consecrate, hallow, or holy area spells |
+  | Undead Resistence        | +2 racial bonus on disease and mind affecting             |
+  | Resist Level Drain       | No penaties until negative levels until death at HD.      |
+  |                          | Automatically removed after 24 hours                      |
+  | Manipulation             | +2 to use magic device, escape artist                     |
+  | Spell-like abilities     | Can cast comprehend languages 3 times a day as spell-like |
+  | Darkvision               | 60ft dark vision                                          |
+  | low light vision         | low light vision                                          |
+  | Negative energy affinity | swap effects of positive and negative energy              |
+  |--------------------------+-----------------------------------------------------------|
+
+  #+NAME:Class1Features
+  |-----------------+-------------------------------------------------------------------------------------------|
+  | Name            | Description                                                                               |
+  |-----------------+-------------------------------------------------------------------------------------------|
+  | White Hair (Su) | Hair is natural attack dealing 1d4 + int. Int also gets added to CMB instead of strength. |
+  |                 | Free action grapple on hit without provoking. Grappling does not cause witch to become    |
+  |                 | grappled. At 4th level and every 4th after add 5 ft to reach. Cannot be sundered          |
+  | Constrict (Ex)  | Swift action while grappling dealing attack damage                                        |
+  | Trip(Ex)        | Can trip as a swift action when attacking                                                 |
+  | Patron          | Agility                                                                                   |
+  |-----------------+-------------------------------------------------------------------------------------------|
+
+  #+NAME:Class2Features
+  |------------------------+----------------------------------------------------------------------------------------------|
+  | Name                   | Description                                                                                  |
+  |------------------------+----------------------------------------------------------------------------------------------|
+  | AC Bonus (Ex)          | Wisdom + table bonus to ac. Lost if immobilized, helpless, armored/shields or in medium load |
+  | Flurry of blows        | Attacks as table. Can replace them with combat manuevers.                                    |
+  | Unarmed Strike         | Improved Unarmed strike as bonus feat. Can deal nonlethal if chosen. Progression as table.   |
+  | Bonus Feats            | Bonus feats at 1,2,6,10,14,18 from list. Do not require prerequisites.                       |
+  | Punishing kick (Ex)    | Gain punishing kick as bonus feat. Can push on successful attack roll. Deals normal          |
+  |                        | damage and pushes them 5 feat. Increases distance by 5ft at 10, 15 and 20.                   |
+  |                        | Can knock prone and push in same attack at 15th.                                             |
+  | Evasion(Ex)            | On reflex save take no damage if it would normally half                                      |
+  | Fast Movement (Ex)     | Enhancement bonus to speed as table                                                          |
+  | Manuever Training (Ex) | Use monk level in cmb instead of bab                                                         |
+  | Still Mind (Ex)        | +2 against enchantments                                                                      |
+  | Ki Pool (Su)           | 1/2 level + wisdom in ki points. Can make a ki strike as long as you have 1.                 |
+  |                        | This gives dr penetration based on level. Magic4 coldiron/silver7 lawful10 adamant16         |
+  |                        | Can spend ki to get +20 move, +1 attack in flurry, +4 dodge to AC as swift                   |
+  | Slow fall (Ex)         | If a wall is in arms reach lower fall height by 20 (see table)                               |
+  |------------------------+----------------------------------------------------------------------------------------------|
+
+* Defense
+  #+NAME:Saves
+  |---+---------------+-------+------+---------+---------+------|
+  | ! | Saving Throws | Total | Base | Ability | Enhance | Misc |
+  |---+---------------+-------+------+---------+---------+------|
+  | # | Fortitude     |     6 |    4 |       2 |         |      |
+  | # | Reflex        |    11 |    4 |       7 |         |      |
+  | # | Will          |     7 |    4 |       3 |         |      |
+  |---+---------------+-------+------+---------+---------+------|
+  #+TBLFM: $5=remote(Stats,@3$Modifier)::@2$3..@4$3=vsum($4..$7)::@2$4=remote(ClassGestalt, @>$Fort)::@2$5=remote(Stats, @4$Modifier)::@3$4=remote(ClassGestalt, @>$Ref)::@4$4=remote(ClassGestalt, @>$Will)::@4$5=remote(Stats, @6$Modifier)
+
+  #+NAME:HP
+  |---+--------------+----|
+  | # | Base         | 32 |
+  |   | Temporary HP | 32 |
+  |---+--------------+----|
+  | # | Total        | 55 |
+  |---+--------------+----|
+  #+TBLFM: @1$3=remote(ClassGestalt, @2$HP)::@3$3=@1$3+@2$3
+
+  #+NAME:AC
+  |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
+  | ! | Type      | Total | Base | Armor | Shield | Dex | Size | Dodge | Natural | Deflect | Misc |
+  |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
+  | # | AC        |    26 |   10 |     4 | 0      |   0 |    0 |     0 |       0 |       5 |    7 |
+  | # | Touch     |    22 |   10 |   N/A | N/A    |   0 |    0 |     0 |     N/A |       5 |    7 |
+  | # | Flat-foot |    19 |   10 |     4 | N/A    | N/A |    0 |   N/A |       0 |       5 |      |
+  |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
+  #+TBLFM: @2$3..@>$3=vsum($4..$12);N::@2$5=remote(Armor, @2$AC)::@2$6=0::@2$7..@3$7=min(remote(Stats, @3$Modifier), remote(Armor, @>$6)::@2$8..@>$8=remote(Size, @2$1)::@4$5=remote(Armor, @2$AC)
+
+  #+NAME:CMD
+  |---+-----+-------+------+-----+-----+-----+------+------|
+  | ! |     | Total | Base | BAB | Dex | Str | Size | Misc |
+  |---+-----+-------+------+-----+-----+-----+------+------|
+  | # | CMD |    22 |   10 |   3 |   7 |  -3 |    0 |    5 |
+  |---+-----+-------+------+-----+-----+-----+------+------|
+  #+TBLFM: @2$3=vsum($4..$9)::@2$5=remote(ClassGestalt, @>$BAB)::@2$6=remote(Stats, @3$Modifier)::@2$7=remote(Stats, @2$Modifier)::@2$8=remote(Size, @2$1)
+
+  #+NAME:Resistances
+  |------------------+---|
+  | Damage Reduction |   |
+  | Spell Resistance |   |
+  |------------------+---|
+
+* Attacks
+  #+NAME:Attacks
+  |---+--------+-------+-------------------+---------+------+------|
+  | ! |        | Total | Base Attack Bonus | Ability | Size | Misc |
+  |---+--------+-------+-------------------+---------+------+------|
+  | # | Melee  |     1 |                 3 |      -2 |    0 |      |
+  | # | Ranged |     7 |                 3 |       4 |    0 |      |
+  | # | CMB    |     1 |                 3 |      -2 |    0 |      |
+  |---+--------+-------+-------------------+---------+------+------|
+  #+TBLFM: @2$3..@4$3=vsum($4..$7)::@2$4..@4$4=remote(ClassGestalt, @>$BAB)::@2$5=remote(Stats, @2$Modifier)::@2$6=remote(Size, @2$1)::@3$5=remote(Stats, @3$Modifier)::@3$6=remote(Size, @2$1)::@4$5=remote(Stats, @2$Modifier)::@4$6=remote(Size, @2$1)
+
+  #+NAME:Weapons
+  |---+-------------------+---------+------------------+--------+------+-------+------+------+------------------|
+  | ! | Weapon            | Enhance | Attack Modifiers | Damage | Crit | Range | Size | Type | Notes            |
+  |---+-------------------+---------+------------------+--------+------+-------+------+------+------------------|
+  |---+-------------------+---------+------------------+--------+------+-------+------+------+------------------|
+
+* Skills
+  # To mark as a class skill just put a 1 in the class column, org mode doesn't
+  # support checkboxes in tables yet. You can add or change the ability the
+  # stat depends on by modifying the Stat column. If a skill is affected by
+  # armor penalty just mark it with a 1 in the Armor Penalty column
+  #+NAME:Skills
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  | ! | TR | AP | Class | Skill                | Stat |  Total | Ranks | Ability | Trained | Misc |
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  | # |    |  1 |     1 | Acrobatics           | Dex  |      8 |     1 |       4 |       3 |      |
+  | # |    |    |       | Appraise             | Int  |      4 |       |       4 |         |      |
+  | # |    |    |       | Bluff                | Cha  |     -2 |       |      -2 |         |      |
+  | # |    |  1 |     1 | Climb                | Str  |      2 |     1 |      -2 |       3 |      |
+  | # |    |    |     1 | Craft (Alchemy):     | Int  |      4 |       |       4 |         |      |
+  | # |    |    |       | Diplomacy            | Cha  |     -2 |       |      -2 |         |      |
+  | # |  1 |  1 |       | Disable Device       | Dex  |      - |       |       4 |         |      |
+  | # |    |    |       | Disguise             | Cha  |     -2 |       |      -2 |         |      |
+  | # |    |  1 |     1 | Escape Artist        | Dex  |     11 |     4 |       4 |       3 |      |
+  | # |    |  1 |     1 | Fly                  | Dex  |      8 |     1 |       4 |       3 |      |
+  | # |  1 |    |       | Handle Animal        | Cha  |      - |       |      -2 |         |      |
+  | # |    |    |     1 | Heal                 | Wis  |      7 |     1 |       3 |       3 |      |
+  | # |    |    |     1 | Intimidate           | Cha  |      2 |     1 |      -2 |       3 |      |
+  | # |  1 |    |     1 | Knowledge: Arcana    | Int  |     11 |     4 |       4 |       3 |      |
+  | # |  1 |    |       | Knowledge: Dungeon   | Int  |      - |       |       4 |         |      |
+  | # |  1 |    |       | Knowledge: Engineer  | Int  |      - |       |       4 |         |      |
+  | # |  1 |    |       | Knowledge: Geography | Int  |      - |       |       4 |         |      |
+  | # |  1 |    |     1 | Knowledge: History   | Int  |      8 |     1 |       4 |       3 |      |
+  | # |  1 |    |       | Knowledge: Local     | Int  |      - |       |       4 |         |      |
+  | # |  1 |    |     1 | Knowledge: Nature    | Int  |     11 |     4 |       4 |       3 |      |
+  | # |  1 |    |       | Knowledge: Nobility  | Int  |      - |       |       4 |         |      |
+  | # |  1 |    |     1 | Knowledge: Planes    | Int  |     11 |     4 |       4 |       3 |      |
+  | # |  1 |    |     1 | Knowledge: Religion  | Int  |     11 |     3 |       4 |       3 |      |
+  | # |  1 |    |       | Linguistics          | Int  |      - |       |       4 |         |      |
+  | # |    |    |     1 | Perception           | Wis  |      7 |       |       3 |       3 |      |
+  | # |    |    |     1 | Perform:             | Cha  |     -2 |       |      -2 |         |      |
+  | # |  1 |    |     1 | Profession:          | Wis  |      - |       |       3 |         |      |
+  | # |    |  1 |     1 | Ride                 | Dex  |      4 |       |       4 |         |      |
+  | # |    |    |     1 | Sense Motive         | Wis  |      7 |     1 |       3 |       3 |      |
+  | # |  1 |  1 |       | Sleight of Hand      | Dex  |      - |       |       4 |         |      |
+  | # |  1 |    |     1 | Spellcraft           | Int  |      8 |     4 |       4 |       3 |      |
+  | # |    |  1 |       | Stealth              | Dex  |      4 |       |       4 |         |      |
+  | # |    |    |       | Survival             | Wis  |      3 |       |       3 |         |      |
+  | # |    |  1 |     1 | Swim                 | Str  |      2 |     1 |      -2 |       3 |      |
+  | # |  1 |    |     1 | Use Magic Device     | Cha  |      - |     1 |      -2 |         |      |
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  | # |    |    |       |                      |      | Total: |    32 |         |         |      |
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  #+TBLFM:@2$7..@-1$7=if(($2 > 0 && $8 > 0) || ($2 == 0), vsum($8..$11)+($3*remote(Armor, @>$Penalty)), string("-"))::@2$9..@-1$9='(cond ((string= $6 "Str") remote(Stats, @2$Modifier)) ((string= $6 "Dex") remote(Stats, @3$Modifier)) ((string= $6 "Int") remote(Stats, @5$Modifier)) ((string= $6 "Wis") remote(Stats, @6$Modifier)) ((string= $6 "Cha") remote(Stats, @7$Modifier)))::@2$10..@-1$10=if($4 > 0 && $8 > 0, 3, string(""))::@>$8=vsum(@2$8..@-1$8)
+
+* Inventory
+
+** Equipment
+   # Just add new rows for new items
+   #+NAME:Equipment
+   |---+------------------------------+----------+------------------+---------------|
+   | ! | Name                         | Quantity | Effective Weight | Actual Weight |
+   |---+------------------------------+----------+------------------+---------------|
+   |   | Wand of inflict light wounds |      100 |                0 |             0 |
+   |   |                              |          |                  |               |
+   |---+------------------------------+----------+------------------+---------------|
+   | # | Total Weight:                |          |               35 |            35 |
+   |---+------------------------------+----------+------------------+---------------|
+   #+TBLFM: @>$4=vsum(@4$4..@-2$4)::@>$5=vsum(@4$5..@-2$5)
+
+   # Worn magic items
+   #+NAME:WornEquipment
+   |-----------+------------------------------|
+   | Head      |                              |
+   | Face      |                              |
+   | Throat    | Agile Amulet of mighty fists |
+   | Shoulders |                              |
+   | Body      |                              |
+   | Torso     |                              |
+   | Arms      |                              |
+   | Hands     |                              |
+   | Ring      |                              |
+   | Ring      |                              |
+   | Waist     |                              |
+   | Feet      |                              |
+   |-----------+------------------------------|
+
+   #+NAME:Armor
+   |---+---------+------------+---------+----+---------+---------+----------------+------+------+----------|
+   | ! | Type    | Name       | Enhance | AC | Max Dex | Penalty | Spell Fail (%) | Type | Size | Material |
+   |---+---------+------------+---------+----+---------+---------+----------------+------+------+----------|
+   |   | Armor   | Mage Armor |         |  4 |       0 |       0 |              0 |      |      |          |
+   |---+---------+------------+---------+----+---------+---------+----------------+------+------+----------|
+   | # | Totals: |            |         | 14 |       0 |       0 |              0 |      |      |          |
+   |---+---------+------------+---------+----+---------+---------+----------------+------+------+----------|
+   #+TBLFM: @>$5=10+vsum(@2$5..@-1$5)::@>$6=@2$6::@>$7=vsum(@2$7..@-1$7)::@>$8=vsum(@2$8..@-1$8)
+
+** Wealth
+   #+NAME:Wealth
+   |----------+------|
+   | Platinum |      |
+   | Gold     | 1250 |
+   | Silver   |      |
+   | Copper   |      |
+   |----------+------|
+
+** Bags and Containers
+   #+NAME:Bags
+   |-----------+--------+--------|
+   | Container | Volume | Weight |
+   |-----------+--------+--------|
+   | Backpack  | 2ft^3  |      2 |
+   |-----------+--------+--------|
+* Spells
+  #+NAME:CastingStat
+  |---+--------------+-----+---|
+  | # | Casting Stat | Int | 4 |
+  |---+--------------+-----+---|
+  #+TBLFM:@1$4='(cond ((string= $3 "Int") remote(Stats, @5$Modifier)) ((string= $3 "Wis") remote(Stats, @6$Modifier)) ((string= $3 "Cha") remote(Stats, @7$Modifier)))
+
+  #+NAME:SpellInfo
+  |---+---------+-------------+-------+-------------+---------+------+-------------|
+  | ! | Save DC | Spell Level | Total | Class Bonus | Ability | Misc | Total Known |
+  |---+---------+-------------+-------+-------------+---------+------+-------------|
+  | # |         |           0 |     0 |           0 |         |      |             |
+  | # |      15 |           1 |     5 |           4 |       1 |      |             |
+  | # |      16 |           2 |     5 |           4 |       1 |      |             |
+  | # |      17 |           3 |     4 |           3 |       1 |      |             |
+  | # |      18 |           4 |     4 |           3 |       1 |      |             |
+  | # |      19 |           5 |     4 |           4 |       0 |      |             |
+  | # |      20 |           6 |     3 |           3 |       0 |      |             |
+  | # |      21 |           7 |     2 |           2 |       0 |      |             |
+  | # |      22 |           8 |     1 |           1 |       0 |      |             |
+  | # |      23 |           9 |     0 |             |       0 |      |             |
+  |---+---------+-------------+-------+-------------+---------+------+-------------|
+  #+TBLFM: $4=vsum($5..$7)::$2=if($4 > 0, 10+$3+remote(CastingStat, @1$4), string(""))::@3$6..@>$6=max(0, (remote(CastingStat, @1$4)-$3)\4+1)
+  # 
+
+  #+NAME:CasterLevel
+  |--------------+---|
+  | Caster Level | 4 |
+  |--------------+---|
+
+  #+NAME:Concentration
+  |---+---------------+-------+------+---------+------|
+  | ! |               | Total | Base | Ability | Misc |
+  |---+---------------+-------+------+---------+------|
+  | # | Concentration |     8 |    4 |       4 |      |
+  |---+---------------+-------+------+---------+------|
+  #+TBLFM: @2$3=vsum($4..$6)::@2$4=remote(CasterLevel, @1$2)::@2$5=remote(CastingStat, @1$4)
+
+  #+NAME:SpellRanges
+  |---+--------+-----|
+  | # | Close  |  30 |
+  | # | Medium | 120 |
+  | # | Long   | 480 |
+  |---+--------+-----|
+  #+TBLFM: @1$3=25+remote(CasterLevel,@1$2)*5/2::@2$3=100+remote(CasterLevel, @1$2)*10::@3$3=400+remote(CasterLevel, @1$2)*40
+
+  #+NAME:WitchSpells
+  |------------+-------+------------------------+-------------------------------------------------------------+---------|
+  | # Prepared | Level | Name                   | Description                                                 | Save DC |
+  |------------+-------+------------------------+-------------------------------------------------------------+---------|
+  |            |     0 | Arcane Mark            | Inscribes a personal rune on an object or creature          |         |
+  |            |     0 | Bleed                  | Causes a stabilized creature to resume dying                |         |
+  |            |     0 | Dancing Light          | creates torches or other lights                             |         |
+  |            |     0 | Daze                   | creature with <=4 hd loses next action                      |         |
+  | 1          |     0 | Detect Magic           | detects magic                                               |         |
+  |            |     0 | Detect Poison          | detects poison in creature or small object                  |         |
+  |            |     0 | Guidance               | +1 on one attack, saving throw or skill scheck              |         |
+  |            |     0 | Light                  | object shines like a torch                                  |         |
+  |            |     0 | Mending                | make minor repairs on an object                             |         |
+  | 1          |     0 | Message                | whisper conversation at a distance                          |         |
+  |            |     0 | Putrefy food and drink | make food and water inedible                                |         |
+  |            |     0 | Read Magic             | read scrolls and spellbooks                                 |         |
+  |            |     0 | Resistance             | +1 on saving throws                                         |         |
+  | 1          |     0 | Spark                  | ignites flammable objects                                   |         |
+  | 1          |     0 | Stabilize              | causes dying creature to stabilize                          |         |
+  |            |     0 | Touch of fatigue       | touch attack to fatigue targets                             |         |
+  | 1/2        |     1 | Air bubble             | Creates a small pocket of air around head/object            |         |
+  |            |     1 | Jump                   | +10 to jumps (20 at 5, 30 at 9)                             |         |
+  |            |     1 | Bouncy Body            | +2 on grapple, escape aritist, and cmd. Falling-20'. Bounce |         |
+  | 1/1        |     1 | Compel Hostility       | As an immediate action force target to attack you instead   |         |
+  | 1/1        |     1 | Infernal healing       | Fast healing 1 for 10 rds                                   |         |
+  |            |     1 | Inflict Light Wounds   | 1d8+1/clvl (max 5)) negative energy                         |         |
+  | 0/1        |     1 | Mage armor             | +4 armor bonus to ac                                        |         |
+  |            |     1 | Mudball                | ranged touch to blind                                       |         |
+  |            |     1 | Obscuring Mist         | Mist! 20 ft radius                                          |         |
+  | 0/1        |     1 | Reduce person          | Creature becomes small gains bonuses                        |         |
+  |            |     1 | Summon monster 1       | Summons monster                                             |         |
+  | 1/1        |     2 | Blood transcription    | Learn spells by drinking a pint blood of a dead caster      |         |
+  |            |     2 | Glitterdust            | Blind creatures and outline them negating invisibility      |         |
+  |            |     2 | Levitate               | Lift and move an object                                     |         |
+  | 0/1        |     2 | Cat's grace            | +4 enhancement bonus to dexterity                           |         |
+  | 0/1        |     2 | Merge with Familiar    | merge with familiar                                         |         |
+  |            |     2 | Inflict Moderate Wds   | 2d8+1 (max 10) negative energy                              |         |
+  |------------+-------+------------------------+-------------------------------------------------------------+---------|
+
+
+* Loot
+chain shirt
+dagger
+light crossbow
++1 ring of protection
+small vials 5 empty
+1 potion cure moderate
+2 scrolls
+backpack
+hourglass
+ink
+pen
+journal
+scroll case
+coral
+6 pearls 160gp
+71 gold
+
+add 50 gold for yourself
+* Transients
+4 min cats grace
+4 min reduce person
+4 min airbubble
