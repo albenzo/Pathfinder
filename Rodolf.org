@@ -99,14 +99,15 @@
   | Improved Grapple      | +2 to grapple, +2 against, don't provoke        |
   | Combat Reflexes       | AOOs up to dex mod +1 and while flat-footed     |
   | Weapon Focus (Hair)   | +1 to attack rolls with hair                    |
-  | Feral Combat Training | Can flurry with hair and apply feats with       |
-  |                       | imporoved unarm strike as a prereq              |
+  | Weapon Finesse        | Dex to attack for certain weapon types          |
   | Punishing kick        | Can push or knock prone as part of attack roll  |
   |                       | Knock prone gives fort save dc 10+wis+1/2 level |
   |                       | Can be used 1/lvl per day.                      |
   | Psychic Sensativity   | Can activate chakras and obtain psychic skill   |
   |                       | unlocks. Psychic skill unlocks can only be      |
   |                       | used once a day or week. Only next to crab.     |
+  | Feral Combat Training | Can flurry with hair and apply feats with       |
+  |                       | imporoved unarm strike as a prereq              |
   |-----------------------+-------------------------------------------------|
 
   #+NAME:RacialFeatures
@@ -171,7 +172,7 @@
   #+NAME:HP
   |---+--------------+----|
   | # | Base         | 32 |
-  |   | Temporary HP | 32 |
+  |   | Temporary HP | 0  |
   |---+--------------+----|
   | # | Total        | 55 |
   |---+--------------+----|
@@ -239,7 +240,7 @@
   | # |    |  1 |     1 | Fly                  | Dex  |      8 |     1 |       4 |       3 |      |
   | # |  1 |    |       | Handle Animal        | Cha  |      - |       |      -2 |         |      |
   | # |    |    |     1 | Heal                 | Wis  |      7 |     1 |       3 |       3 |      |
-  | # |    |    |     1 | Intimidate           | Cha  |      2 |     1 |      -2 |       3 |      |
+  | # |    |    |     1 | Intimidate           | Cuha  |      2 |     1 |      -2 |       3 |      |
   | # |  1 |    |     1 | Knowledge: Arcana    | Int  |     11 |     4 |       4 |       3 |      |
   | # |  1 |    |       | Knowledge: Dungeon   | Int  |      - |       |       4 |         |      |
   | # |  1 |    |       | Knowledge: Engineer  | Int  |      - |       |       4 |         |      |
@@ -276,7 +277,7 @@
    | ! | Name                         | Quantity | Effective Weight | Actual Weight |
    |---+------------------------------+----------+------------------+---------------|
    |   | Wand of inflict light wounds |      100 |                0 |             0 |
-   |   |                              |          |                  |               |
+   |   | Masterwork backpack          |          |                  |               |
    |---+------------------------------+----------+------------------+---------------|
    | # | Total Weight:                |          |               35 |            35 |
    |---+------------------------------+----------+------------------+---------------|
@@ -284,20 +285,20 @@
 
    # Worn magic items
    #+NAME:WornEquipment
-   |-----------+------------------------------|
-   | Head      |                              |
-   | Face      |                              |
-   | Throat    | Agile Amulet of mighty fists |
-   | Shoulders |                              |
-   | Body      |                              |
-   | Torso     |                              |
-   | Arms      |                              |
-   | Hands     |                              |
-   | Ring      |                              |
-   | Ring      |                              |
-   | Waist     |                              |
-   | Feet      |                              |
-   |-----------+------------------------------|
+   |-----------+------------------------|
+   | Head      |                        |
+   | Face      |                        |
+   | Throat    |                        |
+   | Shoulders |                        |
+   | Body      | Robe of Infinite Twine |
+   | Torso     |                        |
+   | Arms      |                        |
+   | Hands     |                        |
+   | Ring      |                        |
+   | Ring      |                        |
+   | Waist     |                        |
+   | Feet      | Featherstep slippers   |
+   |-----------+------------------------|
 
    #+NAME:Armor
    |---+---------+------------+---------+----+---------+---------+----------------+------+------+----------|
@@ -434,3 +435,4 @@ add 50 gold for yourself
 4 min cats grace
 4 min reduce person
 4 min airbubble
+21 rounds

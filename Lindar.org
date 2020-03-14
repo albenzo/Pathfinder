@@ -1,0 +1,346 @@
+# -*- org-emphasis-alist: nil -*-
+
+#+TITLE: Pathfinder Character Sheet
+#+AUTHOR: Lucas Meyers (Adapted from Jesus Ramos)
+
+* Basic Character Info
+  - Name :: Lindar Rodolfson
+  - Race :: Goblin
+  - Gender :: Male
+  - Height :: 3'
+  - Weight :: 34
+  - Age :: 14
+  - Alignment :: Neutral
+  - Deity :: None
+  - Background Occupation :: Enforcer
+  - Languages :: Goblin, Common, Orc
+
+  #+NAME:Size
+  |------------|
+  | Size Bonus |
+  |------------|
+  |          1 |
+  |------------|
+
+* Character Stats
+  #+NAME:Stats
+  |---+--------------+-------+----------+------+----------+---------+------|
+  | ! | Stat         | Total | Modifier | Base | Inherent | Enhance | Misc |
+  |---+--------------+-------+----------+------+----------+---------+------|
+  | # | Strength     |     5 |       -3 |    8 |          |         |      |
+  | # | Dexterity    |    22 |        6 |   22 |          |         |      |
+  | # | Constitution |    16 |        3 |   16 |          |         |      |
+  | # | Intelligence |    14 |        2 |   14 |          |         |      |
+  | # | Wisdom       |    10 |        0 |   10 |          |         |      |
+  | # | Charisma     |    10 |        0 |   10 |          |         |      |
+  |---+--------------+-------+----------+------+----------+---------+------|
+  #+TBLFM: $3=vsum($5..$8)::$4=floor(($3 - 10) / 2)
+
+  #+NAME:Initiative
+  |---+------------+-------+------+------|
+  | ! |            | Total | Base | Misc |
+  |---+------------+-------+------+------|
+  | # | Initiative |     6 |    6 |      |
+  |---+------------+-------+------+------|
+  #+TBLFM: @2$3=vsum(@2$4..@2$5)::@2$4=remote(Stats, @3$Modifier)
+
+* Class
+  #+NAME:Class1
+  |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
+  | ! | HP     | HD  | Class Name    | BAB | Skills | Fort | Ref | Will | Levels |
+  |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
+  |   |        | d10 | Brawler       |   4 |      4 |    4 |   4 |    1 |      4 |
+  |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
+  |   | Totals |     | Favored Class |     |        |      |     |      |        |
+  |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
+  | # | 8      |     |               |   2 |      2 |    1 |   1 |    4 |      4 |
+  |---+--------+-----+---------------+-----+--------+------+-----+------+--------|
+  #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
+
+  #+NAME:Class2
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  | ! | HP     | HD | Class Name      | BAB | Skills | Fort | Ref | Will | Levels |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  |   |        | d8 | Unchained Rogue |   3 |      8 |    1 |   4 |    1 |      4 |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  |   | Totals |    |                 |     |        |      |     |      |        |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  | # | 0      |    |                 |   3 |      4 |    4 |   4 |    4 |      4 |
+  |---+--------+----+-----------------+-----+--------+------+-----+------+--------|
+  #+TBLFM: @>$2=vsum(@2..@-2)::@>$5..@>$10=vsum(@2..@-2)
+
+  #+NAME:ClassGestalt
+  |---+----+-----+------------+-----+--------+------+-----+------+--------|
+  | ! | HP | HD  | Class Name | BAB | Skills | Fort | Ref | Will | Levels |
+  |---+----+-----+------------+-----+--------+------+-----+------+--------|
+  | # | 42 | d10 | Gestalt    |   4 |      8 |    4 |   4 |    1 |      4 |
+  |---+----+-----+------------+-----+--------+------+-----+------+--------|
+
+  #+NAME:Experience
+  |------------+-----+------|
+  | Experience | 900 | 1300 |
+  |------------+-----+------|
+
+  #+NAME:Proficiencies
+  |---------+-----------------------------------------------------------+----------------------|
+  | Class   | Weapons                                                   | Armors               |
+  |---------+-----------------------------------------------------------+----------------------|
+  | Brawler | Simple weapons, handaxe, short sword, close fighter group | Light armor, shields |
+  | Rogue   | Simple weapons, hand crossbow, rapier, sap, short sword   | Light armor, shields |
+  |         | short bow                                                 |                      |
+  |---------+-----------------------------------------------------------+----------------------|
+
+
+  #+NAME:Feats
+  |------------------+--------------------------------------------------------------------------------------------|
+  | Name             | Description                                                                                |
+  |------------------+--------------------------------------------------------------------------------------------|
+  | Roll With It     | Spend immediate action when hit with melee make acrobatics DC 5+dmg to go flying that many |
+  |                  | feet instead. Staggered next round. If you hit an obstacle take damage as normal           |
+  | Combat Expertise | -1 on attack rolls and cmb checks to get +1 dodge to AC. Increases by one for each 4 BAB   |
+  | Two-weapon Feint | When two weapon fighting forgo first attack to make a feint.                               |
+  | Dodge            | +1 dodge bonus to ac                                                                       |
+  |------------------+--------------------------------------------------------------------------------------------|
+
+  #+NAME:Rogue-talent
+  |--------------+-------------------------------------------------------------------------|
+  | Name         | Description                                                             |
+  |--------------+-------------------------------------------------------------------------|
+  | Combat Trick | Gain a bonus combat feat                                                |
+  | Stand Up     | Stand up as a swift without provoking or as a free action that provokes |
+  |--------------+-------------------------------------------------------------------------|
+
+  #+NAME:RacialFeatures
+  |---------+------------------------|
+  | Name    | Description            |
+  |---------+------------------------|
+  | Skilled | +4 to ride and stealth |
+  |---------+------------------------|
+
+  #+NAME:Trait
+  |------------------------------+--------------------------------|
+  | Name                         | Description                    |
+  |------------------------------+--------------------------------|
+  | Numerological Gift (Adopted) | Once per day treat a 9 as a 20 |
+  |------------------------------+--------------------------------|
+
+  #+NAME:Class1Features
+  |-------------------+------------------------------------------------------------|
+  | Name              | Description                                                |
+  |-------------------+------------------------------------------------------------|
+  | Brawler's Flurry  | Two weapon fighting with certain weapons. Get full damage  |
+  |                   | Can replace attacks with disarm, sunder, or trip           |
+  | Manuever Training | +1 cmb, cmd on disarm                                      |
+  | AC Bonus          | +1 Dodge to AC                                             |
+  | Knockout          | Make an attack roll, if it hits fort save 10+1/2lev+dex    |
+  |                   | Fall unconsious for 1d6 rounds new save each rd as full-rd |
+  |-------------------+------------------------------------------------------------|
+
+  #+NAME:Class2Features
+  |---------------------+------------------------------------------------------------------------|
+  | Name                | Description                                                            |
+  |---------------------+------------------------------------------------------------------------|
+  | Sneak Attack        | When flanked or without dex to ac +3d6 precision                       |
+  | Trap finding        | +1/2 level to perception and disable device to traps + magic traps     |
+  | Finesse Training    | Light weapons get dex to attack. Add dex to damage                     |
+  | Evasion             | No damage on successful reflex save                                    |
+  | Danger Sense        | +1 reflex, AC against traps, +1 perception for surprise rounds         |
+  | Debilitating Injury | Can apply one of following penalties on sneak attack. Additional       |
+  |                     | Extends duration                                                       |
+  |                     | Bewildered: -2 AC, additional -2 against rogue                         |
+  |                     | Disorientated: -2 attack rolls, -2 additional against rogue            |
+  |                     | Hampered: Divide speed by half. No 5-foot step                         |
+  | Unfettered Mind     | Full round action escape artist (20+original DC) to end mind affecting |
+  |                     | effects. Can only attempt once per duration interval                   |
+  |---------------------+------------------------------------------------------------------------|
+
+* Defense
+  #+NAME:Saves
+  |---+---------------+-------+------+---------+---------+------|
+  | ! | Saving Throws | Total | Base | Ability | Enhance | Misc |
+  |---+---------------+-------+------+---------+---------+------|
+  | # | Fortitude     |     7 |    4 |       3 |         |      |
+  | # | Reflex        |    10 |    4 |       6 |         |      |
+  | # | Will          |     1 |    1 |       0 |         |      |
+  |---+---------------+-------+------+---------+---------+------|
+  #+TBLFM: $5=remote(Stats,@3$Modifier)::@2$3..@4$3=vsum($4..$7)::@2$4=remote(ClassGestalt, @>$Fort)::@2$5=remote(Stats, @4$Modifier)::@3$4=remote(ClassGestalt, @>$Ref)::@4$4=remote(ClassGestalt, @>$Will)::@4$5=remote(Stats, @6$Modifier)
+
+  #+NAME:HP
+  |---+--------------+----|
+  | # | Base         | 42 |
+  |   | Temporary HP |  0 |
+  |---+--------------+----|
+  | # | Total        | 42 |
+  |---+--------------+----|
+  #+TBLFM: @1$3=remote(ClassGestalt, @2$HP)::@3$3=@1$3+@2$3
+
+  #+NAME:AC
+  |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
+  | ! | Type      | Total | Base | Armor | Shield | Dex | Size | Dodge | Natural | Deflect | Misc |
+  |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
+  | # | AC        |    23 |   10 |     4 | 0      |   6 |    1 |     2 |       0 |         |      |
+  | # | Touch     |    19 |   10 |   N/A | N/A    |   6 |    1 |     2 |     N/A |         |      |
+  | # | Flat-foot |    15 |   10 |     4 | N/A    | N/A |    1 |   N/A |       0 |         |      |
+  |---+-----------+-------+------+-------+--------+-----+------+-------+---------+---------+------|
+  #+TBLFM: @2$3..@>$3=vsum($4..$12);N::@2$5=remote(Armor, @2$AC)::@2$6=0::@2$7..@3$7=min(remote(Stats, @3$Modifier), remote(Armor, @>$6)::@2$8..@>$8=remote(Size, @2$1)::@4$5=remote(Armor, @2$AC)
+
+  #+NAME:CMD
+  |---+-----+-------+------+-----+-----+-----+------+------|
+  | ! |     | Total | Base | BAB | Dex | Str | Size | Misc |
+  |---+-----+-------+------+-----+-----+-----+------+------|
+  | # | CMD |    18 |   10 |   4 |   6 |  -3 |    1 |      |
+  |---+-----+-------+------+-----+-----+-----+------+------|
+  #+TBLFM: @2$3=vsum($4..$9)::@2$5=remote(ClassGestalt, @>$BAB)::@2$6=remote(Stats, @3$Modifier)::@2$7=remote(Stats, @2$Modifier)::@2$8=remote(Size, @2$1)
+
+  #+NAME:Resistances
+  |------------------+---|
+  | Damage Reduction |   |
+  | Spell Resistance |   |
+  |------------------+---|
+
+* Attacks
+  #+NAME:Attacks
+  |---+--------+-------+-------------------+---------+------+------|
+  | ! |        | Total | Base Attack Bonus | Ability | Size | Misc |
+  |---+--------+-------+-------------------+---------+------+------|
+  | # | Melee  |    11 |                 4 |       6 |    1 |      |
+  | # | Ranged |    11 |                 4 |       6 |    1 |      |
+  | # | CMB    |     2 |                 4 |      -3 |    1 |      |
+  |---+--------+-------+-------------------+---------+------+------|
+  #+TBLFM: @2$3..@4$3=vsum($4..$7)::@2$4..@4$4=remote(ClassGestalt, @>$BAB)::@2$5=remote(Stats, @3$Modifier)::@2$6=remote(Size, @2$1)::@3$5=remote(Stats, @3$Modifier)::@3$6=remote(Size, @2$1)::@4$5=remote(Stats, @2$Modifier)::@4$6=remote(Size, @2$1)
+
+  #+NAME:Weapons
+  |---+----------+---------+------------------+--------+------+-------+------+-------+-------|
+  | ! | Weapon   | Enhance | Attack Modifiers | Damage | Crit | Range | Size | Type  | Notes |
+  |---+----------+---------+------------------+--------+------+-------+------+-------+-------|
+  |   | Fist(s)  |         |                  |    1d6 | x2   |    20 | s    | light |       |
+  |---+----------+---------+------------------+--------+------+-------+------+-------+-------|
+
+* Skills
+  # To mark as a class skill just put a 1 in the class column, org mode doesn't
+  # support checkboxes in tables yet. You can add or change the ability the
+  # stat depends on by modifying the Stat column. If a skill is affected by
+  # armor penalty just mark it with a 1 in the Armor Penalty column
+  #+NAME:Skills
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  | ! | TR | AP | Class | Skill                | Stat |  Total | Ranks | Ability | Trained | Misc |
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  | # |    |  1 |     1 | Acrobatics           | Dex  |     13 |     4 |       6 |       3 |      |
+  | # |    |    |     1 | Appraise             | Int  |      2 |       |       2 |         |      |
+  | # |    |    |     1 | Bluff                | Cha  |      7 |     4 |       0 |       3 |      |
+  | # |    |  1 |     1 | Climb                | Str  |      4 |     4 |      -3 |       3 |      |
+  | # |    |    |     1 | Craft (Alchemy):     | Int  |      2 |       |       2 |         |      |
+  | # |    |    |     1 | Diplomacy            | Cha  |      0 |       |       0 |         |      |
+  | # |  1 |  1 |     1 | Disable Device       | Dex  |     13 |     4 |       6 |       3 |      |
+  | # |    |    |     1 | Disguise             | Cha  |      0 |       |       0 |         |      |
+  | # |    |  1 |     1 | Escape Artist        | Dex  |     13 |     4 |       6 |       3 |      |
+  | # |    |  1 |       | Fly                  | Dex  |      6 |       |       6 |         |      |
+  | # |  1 |    |     1 | Handle Animal        | Cha  |      - |       |       0 |         |      |
+  | # |    |    |     1 | Heal                 | Wis  |      0 |       |       0 |         |      |
+  | # |    |    |     1 | Intimidate           | Cha  |      0 |       |       0 |         |      |
+  | # |  1 |    |       | Knowledge: Arcana    | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |     1 | Knowledge: Dungeon   | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |       | Knowledge: Engineer  | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |       | Knowledge: Geography | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |       | Knowledge: History   | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |     1 | Knowledge: Local     | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |       | Knowledge: Nature    | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |       | Knowledge: Nobility  | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |       | Knowledge: Planes    | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |       | Knowledge: Religion  | Int  |      - |       |       2 |         |      |
+  | # |  1 |    |     1 | Linguistics          | Int  |      - |       |       2 |         |      |
+  | # |    |    |     1 | Perception           | Wis  |      7 |     4 |       0 |       3 |      |
+  | # |    |    |     1 | Perform:             | Cha  |      0 |       |       0 |         |      |
+  | # |  1 |    |     1 | Profession:          | Wis  |      - |       |       0 |         |      |
+  | # |    |  1 |     1 | Ride                 | Dex  |      6 |       |       6 |         |      |
+  | # |    |    |     1 | Sense Motive         | Wis  |      7 |     4 |       0 |       3 |      |
+  | # |  1 |  1 |     1 | Sleight of Hand      | Dex  |      - |       |       6 |         |      |
+  | # |  1 |    |       | Spellcraft           | Int  |      - |       |       2 |         |      |
+  | # |    |  1 |     1 | Stealth              | Dex  |     23 |     4 |       6 |       3 |   10 |
+  | # |    |    |       | Survival             | Wis  |      0 |       |       0 |         |      |
+  | # |    |  1 |     1 | Swim                 | Str  |      4 |     4 |      -3 |       3 |      |
+  | # |  1 |    |     1 | Use Magic Device     | Cha  |      - |     4 |      -2 |         |      |
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  | # |    |    |       |                      |      | Total: |    40 |         |         |      |
+  |---+----+----+-------+----------------------+------+--------+-------+---------+---------+------|
+  #+TBLFM:@2$7..@-1$7=if(($2 > 0 && $8 > 0) || ($2 == 0), vsum($8..$11)+($3*remote(Armor, @>$Penalty)), string("-"))::@2$9..@-1$9='(cond ((string= $6 "Str") remote(Stats, @2$Modifier)) ((string= $6 "Dex") remote(Stats, @3$Modifier)) ((string= $6 "Int") remote(Stats, @5$Modifier)) ((string= $6 "Wis") remote(Stats, @6$Modifier)) ((string= $6 "Cha") remote(Stats, @7$Modifier)))::@2$10..@-1$10=if($4 > 0 && $8 > 0, 3, string(""))::@>$8=vsum(@2$8..@-1$8)
+
+* Inventory
+
+** Equipment
+   # Just add new rows for new items
+   #+NAME:Equipment
+   |---+---------------------+----------+------------------+---------------|
+   | ! | Name                | Quantity | Effective Weight | Actual Weight |
+   |---+---------------------+----------+------------------+---------------|
+   |   | Mithral Chain Shirt |        1 |                5 |             5 |
+   |   | Traveler's Anytool  |        1 |                2 |             0 |
+   |   | Burglars Clothes    |        1 |              2.5 |           2.5 |
+   |   | Softpaw pads        |        1 |                2 |             2 |
+   |   | Pocketed scarf      |        1 |                  |               |
+   |   | Silk rope           |        1 |                0 |             5 |
+   |   | Twine               |        1 |                0 |            .5 |
+   |   | Signal Whistle      |        1 |                  |               |
+   |   | Abacus              |        1 |                0 |             2 |
+   |   | Glass Cutter        |        1 |                0 |             5 |
+   |   | Flint and Steel     |        1 |                0 |             1 |
+   |   | Grappling Hook      |        1 |                0 |             4 |
+   |   | Glue paper          |       10 |                0 |             0 |
+   |   | Chalk               |      100 |                0 |             0 |
+   |   | Ink                 |          |                0 |             0 |
+   |   | Journal             |        1 |                0 |             0 |
+   |   | Mess kit            |        1 |                0 |             2 |
+   |   | Iron pot            |        1 |                0 |             4 |
+   |   | Thieve's Ring       |        1 |                  |               |
+   |   | Caltrops            |        5 |                0 |            10 |
+   |   | Mirror              |        1 |                0 |            .5 |
+   |---+---------------------+----------+------------------+---------------|
+   | # | Total Weight:       |          |               35 |            35 |
+   |---+---------------------+----------+------------------+---------------|
+   #+TBLFM: @>$4=vsum(@24$4..@-2$4)::@>$5=vsum(@24$5..@-2$5)
+
+   # Worn magic items
+   #+NAME:WornEquipment
+   |-----------+------------------|
+   | Head      |                  |
+   | Face      |                  |
+   | Throat    |                  |
+   | Shoulders | Muleback Cords   |
+   | Body      |                  |
+   | Torso     |                  |
+   | Arms      |                  |
+   | Hands     |                  |
+   | Ring      |                  |
+   | Ring      |                  |
+   | Waist     |                  |
+   | Feet      | Boots of the cat |
+   |-----------+------------------|
+
+   #+NAME:Armor
+   |---+---------+---------------------+---------+----+---------+---------+----------------+-------+-------+----------|
+   | ! | Type    | Name                | Enhance | AC | Max Dex | Penalty | Spell Fail (%) | Type  | Size  | Material |
+   |---+---------+---------------------+---------+----+---------+---------+----------------+-------+-------+----------|
+   |   | Light   | Mithral Chain Shirt |         |  4 |       6 |       0 |             10 | Light | Small | Mithral  |
+   |---+---------+---------------------+---------+----+---------+---------+----------------+-------+-------+----------|
+   | # | Totals: |                     |         | 14 |       6 |       0 |             10 |       |       |          |
+   |---+---------+---------------------+---------+----+---------+---------+----------------+-------+-------+----------|
+   #+TBLFM: @>$5=10+vsum(@2$5..@-1$5)::@>$6=@2$6::@>$7=vsum(@2$7..@-1$7)::@>$8=vsum(@2$8..@-1$8)
+
+** Wealth
+   #+NAME:Wealth
+   |----------+---------|
+   | Platinum |         |
+   | Gold     | 240.19  |
+   | Silver   |         |
+   | Copper   |         |
+   |----------+---------|
+
+** Bags and Containers
+   #+NAME:Bags
+   |-----------------+--------+--------|
+   | Container       | Volume | Weight |
+   |-----------------+--------+--------|
+   | Handy haversack |        |      5 |
+   |-----------------+--------+--------|
+
+* Transients
